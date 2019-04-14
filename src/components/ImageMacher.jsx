@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import lowerCase from 'lodash/lowerCase';
 
 import { ATTRIBUTES, RACES } from '../constant';
-import './style.css';
 
 const reference = (category, type) => {
   switch (category) {

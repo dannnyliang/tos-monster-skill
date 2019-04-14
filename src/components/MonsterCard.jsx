@@ -19,7 +19,6 @@ const semiBreakLine = pipe(
   split('；'),
   map(split('。')),
   flatten,
-  map(line => <div>{line}</div>)
 );
 
 function MonsterCard(props) {
@@ -48,10 +47,11 @@ function MonsterCard(props) {
         {monster.activeName.map((name, idx) => (
           <ListGroupItem key={idx}>
             <ListGroupItemHeading>{name}</ListGroupItemHeading>
-            <ListGroupItemText className="mb-1">
-              {semiBreakLine(monster.activeDescription[idx])}
-              {console.log(semiBreakLine(monster.activeDescription[idx]))}
-            </ListGroupItemText>
+            {semiBreakLine(monster.activeDescription[idx]).map((line, idx) => (
+              <ListGroupItemText className="mb-0" key={idx}>
+                {line}
+              </ListGroupItemText>
+            ))}
           </ListGroupItem>
         ))}
         <ListGroupItem color="warning" className="py-0">
