@@ -1,23 +1,24 @@
-import React from 'react';
-import { Form, FormGroup, CustomInput } from 'reactstrap';
+import React from "react";
+import { Form, FormGroup, CustomInput } from "reactstrap";
 
-import { ATTRIBUTES, RACES, STARS } from '../constant';
+import { FILTERS, ATTRIBUTES, RACES, STARS } from "../constant";
 
 function Checkbox(props) {
-  const { checkGroupName, id, text } = props;
+  const { groupName, id, text, handleClick } = props;
   return (
     <CustomInput
       className="d-inline-block mr-3"
       type="checkbox"
-      name={checkGroupName}
+      name={groupName}
       id={id}
       label={text}
+      onChange={handleClick}
     />
   );
 }
 
 function FormGroupFactory(props) {
-  const {groupName, groupLegend, groupItems} = props
+  const { groupName, groupLegend, groupItems, handleClick } = props;
   return (
     <FormGroup>
       <legend>{groupLegend}</legend>
@@ -26,8 +27,9 @@ function FormGroupFactory(props) {
           <Checkbox
             key={id}
             id={id}
-            checkGroupName={groupName}
+            groupName={groupName}
             text={label}
+            handleClick={handleClick(groupName)}
           />
         ))}
       </div>
@@ -35,13 +37,30 @@ function FormGroupFactory(props) {
   );
 }
 
-function FilterPanel() {
+function FilterPanel(props) {
+  const { handleClick } = props;
+
   return (
     <div className="my-3">
       <Form>
-        <FormGroupFactory groupName={'attribute'} groupLegend={'屬性'} groupItems={ATTRIBUTES} />
-        <FormGroupFactory groupName={'race'} groupLegend={'種族'} groupItems={RACES} />
-        <FormGroupFactory groupName={'star'} groupLegend={'稀有度'} groupItems={STARS} />
+        <FormGroupFactory
+          groupName={FILTERS.ATTRIBUTES.id}
+          groupLegend={FILTERS.ATTRIBUTES.label}
+          groupItems={ATTRIBUTES}
+          handleClick={handleClick}
+        />
+        <FormGroupFactory
+          groupName={FILTERS.RACES.id}
+          groupLegend={FILTERS.RACES.label}
+          groupItems={RACES}
+          handleClick={handleClick}
+        />
+        <FormGroupFactory
+          groupName={FILTERS.STARS.id}
+          groupLegend={FILTERS.STARS.label}
+          groupItems={STARS}
+          handleClick={handleClick}
+        />
       </Form>
     </div>
   );

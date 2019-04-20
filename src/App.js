@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import monsters from './tosMonsters';
+import { FILTERS } from './constant';
 import ErrorBoundary from './components/ErrorBoundary';
 import MonsterList from './components/MonsterList';
 import FilterPanel from './components/FilterPanel';
@@ -47,9 +48,32 @@ const sample = [
   },
 ];
 
-export const MonstersContext = React.createContext();
+export const initialFilters = () =>
+  Object.keys(FILTERS).reduce(
+    (filters, filterKey) => ({ ...filters, [filterKey]: [] }),
+    {},
+  );
 
 function App() {
+  const [filters, setFilters] = useState(initialFilters());
+
+  const handleClick = group => evt => {
+    const id = evt.target.id;
+
+    setFilters(state => {
+      if (state[group].includes(id)) {
+        return {
+          ...state,
+          [group]: state[group].filter(item => item !== id),
+        };
+      }
+      return {
+        ...state,
+        [group]: [...state[group], id],
+      };
+    });
+  };
+
   return (
     <ErrorBoundary renderError={<div>ERROR!!</div>}>
       <Container fluid>
@@ -63,14 +87,10 @@ function App() {
               borderRight: '1px solid rgba(0, 0, 0, 0.125)',
             }}
           >
-            <FilterPanel />
+            <FilterPanel handleClick={handleClick} />
           </Col>
           <Col md={{ size: 8, offset: 4 }}>
-            {/* TODO: Pagination */}
-            {/* <MonstersContext.Provider value={{ monsters }}> */}
-            <MonstersContext.Provider value={{ monsters: sample }}>
-              <MonsterList />
-            </MonstersContext.Provider>
+            <MonsterList monsters={sample} filters={filters} />
           </Col>
         </Row>
       </Container>
