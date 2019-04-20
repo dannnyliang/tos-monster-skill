@@ -26,5 +26,30 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "(apps/**|shared/**)/*.{css,scss}": [
+        "prettier --write",
+        "git add"
+      ],
+      "+(apps/**/*.{js,jsx}|shared/**/*.{js,jsx})": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
