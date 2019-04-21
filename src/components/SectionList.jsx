@@ -9,6 +9,7 @@ import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { FILTERS, labelToId } from '../constant';
 import PaginationPages from './PaginationPages';
 import MonsterList from './MonsterList';
+import { propTypes as monsterTypes } from './MonsterCard';
 
 const filterMonsters = (filters, monsters) => {
   const curryFilter = (rawPropName, filterGroupId) =>
@@ -86,7 +87,7 @@ SectionList.defaultProps = {
 };
 
 SectionList.propTypes = {
-  monsters: PropTypes.array,
+  monsters: PropTypes.arrayOf(PropTypes.shape(monsterTypes)),
   filters: PropTypes.shape({
     ATTRIBUTES: PropTypes.arrayOf(PropTypes.string),
     RACES: PropTypes.arrayOf(PropTypes.string),

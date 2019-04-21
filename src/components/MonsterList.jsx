@@ -1,4 +1,6 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
+import PropTypes from 'prop-types';
+import { propTypes as monsterTypes } from './MonsterCard';
 
 const MonsterCard = React.lazy(() => import('./MonsterCard'));
 
@@ -14,5 +16,9 @@ function MonsterList(props) {
     </Suspense>
   );
 }
+
+MonsterList.propTypes = {
+  slicedMonsters: PropTypes.arrayOf(PropTypes.shape(monsterTypes)),
+};
 
 export default MonsterList;

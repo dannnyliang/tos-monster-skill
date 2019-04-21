@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Card,
   Row,
@@ -29,16 +30,19 @@ function MonsterCard(props) {
       <ListGroup>
         <ListGroupItem>
           <Row>
-            <Col>
-              <h3>{monster.monsterName}</h3>
+            <Col sm="4" className="d-flex align-items-center">
+              <h3 className="m-0">{monster.monsterName}</h3>
             </Col>
-            <Col>
-              <ImageMacher category="race" label={monster.race} />
+            <Col className="d-flex align-items-center">
+              <div className="mr-5">
+                <ImageMacher category="race" label={monster.race} />
+              </div>
+              <div className="mr-5">
+                <ImageMacher category="attribute" label={monster.attribute} />
+              </div>
+              <div className="mr-5">稀有度：{monster.star}</div>
+              <div>編號：{monster.monsterId}</div>
             </Col>
-            <Col>
-              <ImageMacher category="attribute" label={monster.attribute} />
-            </Col>
-            <Col className="d-flex align-items-center">{monster.star}</Col>
           </Row>
         </ListGroupItem>
         <ListGroupItem color="info" className="py-0">
@@ -67,5 +71,21 @@ function MonsterCard(props) {
     </Card>
   );
 }
+
+export const propTypes = {
+  monster: PropTypes.shape({
+    monsterId: PropTypes.string,
+    monsterName: PropTypes.string,
+    attribute: PropTypes.string,
+    race: PropTypes.string,
+    star: PropTypes.string,
+    leaderName: PropTypes.string,
+    leaderDescription: PropTypes.string,
+    activeName: PropTypes.arrayOf(PropTypes.string),
+    activeDescription: PropTypes.arrayOf(PropTypes.string),
+  }),
+};
+
+MonsterCard.propTypes = propTypes;
 
 export default MonsterCard;

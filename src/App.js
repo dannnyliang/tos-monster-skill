@@ -5,7 +5,7 @@ import monsters from './tosMonsters';
 import { FILTERS } from './constant';
 import ErrorBoundary from './components/ErrorBoundary';
 import SectionList from './components/SectionList';
-import FilterPanel from './components/FilterPanel';
+import SectionPanel from './components/SectionPanel';
 
 export const initialFilters = () =>
   Object.keys(FILTERS).reduce(
@@ -46,7 +46,7 @@ function App() {
               borderRight: '1px solid rgba(0, 0, 0, 0.125)',
             }}
           >
-            <FilterPanel handleClick={handleClick} />
+            <SectionPanel handleClick={handleClick} />
           </Col>
           <Col md={{ size: 8, offset: 4 }}>
             <SectionList monsters={monsters} filters={filters} initialPage={1} />

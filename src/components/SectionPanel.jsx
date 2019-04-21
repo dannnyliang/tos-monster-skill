@@ -1,7 +1,8 @@
-import React from "react";
-import { Form, FormGroup, CustomInput } from "reactstrap";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Form, FormGroup, CustomInput } from 'reactstrap';
 
-import { FILTERS, ATTRIBUTES, RACES, STARS } from "../constant";
+import { FILTERS, ATTRIBUTES, RACES, STARS } from '../constant';
 
 function Checkbox(props) {
   const { groupName, id, text, handleClick } = props;
@@ -37,7 +38,7 @@ function FormGroupFactory(props) {
   );
 }
 
-function FilterPanel(props) {
+function SectionPanel(props) {
   const { handleClick } = props;
 
   return (
@@ -66,4 +67,8 @@ function FilterPanel(props) {
   );
 }
 
-export default FilterPanel;
+SectionPanel.propTypes = {
+  handleClick: PropTypes.func,
+};
+
+export default SectionPanel;
