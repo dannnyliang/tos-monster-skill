@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# firebase
+/.firebase/*
+
 # data process
 /dataProcess/tos-monsters.json
 /dataProcess/tos-monster-images.json
