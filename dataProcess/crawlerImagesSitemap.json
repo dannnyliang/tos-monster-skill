@@ -1,0 +1,43 @@
+{
+  "_id": "tos-monster-images",
+  "startUrl": ["https://tos.fandom.com/zh/wiki/%E5%9C%96%E9%91%92"],
+  "selectors": [
+    {
+      "id": "tabHeader",
+      "type": "SelectorElementClick",
+      "parentSelectors": ["_root"],
+      "selector": ".selected table",
+      "multiple": false,
+      "delay": 0,
+      "clickElementSelector": ".tabs span",
+      "clickType": "clickOnce",
+      "discardInitialElements": "do-not-discard",
+      "clickElementUniquenessType": "uniqueText"
+    },
+    {
+      "id": "thumbnail",
+      "type": "SelectorImage",
+      "parentSelectors": ["block"],
+      "selector": "img",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "monsterId",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": ["block"],
+      "selector": "img",
+      "multiple": true,
+      "extractAttribute": "alt",
+      "delay": 0
+    },
+    {
+      "id": "block",
+      "type": "SelectorElement",
+      "parentSelectors": ["tabHeader"],
+      "selector": "td > div",
+      "multiple": true,
+      "delay": 0
+    }
+  ]
+}

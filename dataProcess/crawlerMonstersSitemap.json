@@ -1,0 +1,129 @@
+{
+  "_id": "tosmonsters",
+  "startUrl": [
+    "https://tos.fandom.com/zh/wiki/%E5%AF%B5%E7%89%A9%E5%9C%96%E9%91%92001-050"
+  ],
+  "selectors": [
+    {
+      "id": "infoTables",
+      "type": "SelectorElement",
+      "parentSelectors": ["_root", "paginationLinks"],
+      "selector": "table.wikitable:nth-of-type(n+4) tbody",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "monsterName",
+      "type": "SelectorText",
+      "parentSelectors": ["infoTables"],
+      "selector": "td:nth-of-type(3) a",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "paginationLinks",
+      "type": "SelectorLink",
+      "parentSelectors": ["_root"],
+      "selector": "table:nth-of-type(1) a",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "active",
+      "type": "SelectorElement",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(4) td:nth-of-type(1)",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "activeName",
+      "type": "SelectorText",
+      "parentSelectors": ["active"],
+      "selector": "a",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "activeDescription",
+      "type": "SelectorText",
+      "parentSelectors": ["active"],
+      "selector": "_parent_",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "monsterId",
+      "type": "SelectorText",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(1) td:nth-of-type(2)",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "leader",
+      "type": "SelectorElement",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(4) td:nth-of-type(2)",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "leaderName",
+      "type": "SelectorText",
+      "parentSelectors": ["leader"],
+      "selector": "a",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "leaderDescription",
+      "type": "SelectorText",
+      "parentSelectors": ["leader"],
+      "selector": "_parent_",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "attribute",
+      "type": "SelectorText",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(1) td:nth-of-type(4)",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "race",
+      "type": "SelectorText",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(1) td:nth-of-type(5)",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "star",
+      "type": "SelectorText",
+      "parentSelectors": ["infoTables"],
+      "selector": "tr:nth-of-type(2) td:nth-of-type(4)",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "monsterLink",
+      "type": "SelectorLink",
+      "parentSelectors": ["infoTables"],
+      "selector": "b a",
+      "multiple": false,
+      "delay": 0
+    }
+  ]
+}
