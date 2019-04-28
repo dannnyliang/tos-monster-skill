@@ -30,8 +30,13 @@ function MonsterCard(props) {
       <ListGroup>
         <ListGroupItem>
           <Row>
+            <Col sm="1">
+              <img src={monster.thumbnail} alt={monster.monsterName} />
+            </Col>
             <Col sm="4" className="d-flex align-items-center">
-              <h3 className="m-0">{monster.monsterName}</h3>
+              <a className="text-dark" href={monster['monsterLink-href']} target="_blank" rel="noopener noreferrer">
+                <h3 className="m-0">{monster.monsterName}</h3>
+              </a>
             </Col>
             <Col className="d-flex align-items-center">
               <div className="mr-5">
