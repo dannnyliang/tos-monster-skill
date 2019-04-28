@@ -11,7 +11,7 @@ const set = require('lodash/fp/set');
 const sortBy = require('lodash/fp/sortBy');
 
 /***** transform functions *****/
-const filterByMonsterId = filter(({ monsterId }) => monsterId !== null);
+const filterByMonsterId = filter(({ monsterId }) => !isNaN(Number(monsterId)));
 
 const parseMonsterId = each(monster => {
   monster.monsterId = String(Number(monster.monsterId));
@@ -87,19 +87,22 @@ const sliceSkillDescription = monster => {
 };
 
 const skillArrify = monster => {
-  if(monster.activeName2) {
+  if (monster.activeName2) {
     return {
       ...monster,
       activeName: [monster.activeName, monster.activeName2],
-      activeDescription: [monster.activeDescription, monster.activeDescription2],
-    }
+      activeDescription: [
+        monster.activeDescription,
+        monster.activeDescription2,
+      ],
+    };
   }
 
   return {
     ...monster,
     activeName: [monster.activeName],
     activeDescription: [monster.activeDescription],
-  }
+  };
 };
 
 const transform = pipe(
@@ -129,7 +132,6 @@ const write = raw => {
     if (err) throw err;
   });
   console.log(`<----- Write Monster json to: ${jsonFilePath} ----->`);
-
 };
 
 readAndToJson();
