@@ -11,7 +11,11 @@ const set = require('lodash/fp/set');
 const sortBy = require('lodash/fp/sortBy');
 
 /***** transform functions *****/
-const filterByMonsterId = filter(({ monsterId }) => !isNaN(Number(monsterId)));
+const filterByMonsterId = filter(({ monsterId }) => {
+  const numId = Number(monsterId);
+  return !isNaN(numId) && (numId <= 6000 || numId >= 7000);
+  // 6000~7000 之間為造型
+});
 
 const parseMonsterId = each(monster => {
   monster.monsterId = String(Number(monster.monsterId));
