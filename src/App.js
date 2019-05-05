@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React, { useState } from "react";
+import { Container, Row, Col } from "reactstrap";
 
-import monsters from './tosMonsters';
-import { FILTERS } from './constant';
-import ErrorBoundary from './components/ErrorBoundary';
-import SectionList from './components/SectionList';
-import SectionPanel from './components/SectionPanel';
+import monsters from "./tosMonsters";
+import { FILTERS } from "./constant";
+import ErrorBoundary from "./components/ErrorBoundary";
+import SectionList from "./components/SectionList";
+import SectionPanel from "./components/SectionPanel";
 
 export const initialFilters = () =>
   Object.keys(FILTERS).reduce(
     (filters, filterKey) => ({ ...filters, [filterKey]: [] }),
-    {},
+    {}
   );
 
 function App() {
   const [filters, setFilters] = useState(initialFilters());
+  const [searchStr, setSearchStr] = useState("");
 
   const handleClick = group => evt => {
     const id = evt.target.id;
@@ -23,12 +24,12 @@ function App() {
       if (state[group].includes(id)) {
         return {
           ...state,
-          [group]: state[group].filter(item => item !== id),
+          [group]: state[group].filter(item => item !== id)
         };
       }
       return {
         ...state,
-        [group]: [...state[group], id],
+        [group]: [...state[group], id]
       };
     });
   };
@@ -40,16 +41,24 @@ function App() {
           <Col
             md="4"
             style={{
-              height: '100vh',
-              position: 'fixed',
-              overflowY: 'scroll',
-              borderRight: '1px solid rgba(0, 0, 0, 0.125)',
+              height: "100vh",
+              position: "fixed",
+              overflowY: "scroll",
+              borderRight: "1px solid rgba(0, 0, 0, 0.125)"
             }}
           >
-            <SectionPanel handleClick={handleClick} />
+            <SectionPanel
+              handleClick={handleClick}
+              setSearchStr={setSearchStr}
+            />
           </Col>
           <Col md={{ size: 8, offset: 4 }}>
-            <SectionList monsters={monsters} filters={filters} initialPage={1} />
+            <SectionList
+              monsters={monsters}
+              filters={filters}
+              initialPage={1}
+              searchStr={searchStr}
+            />
           </Col>
         </Row>
       </Container>

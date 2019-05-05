@@ -1,46 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import pipe from 'lodash/fp/pipe';
-import prop from 'lodash/fp/prop';
-import filter from 'lodash/fp/filter';
-import isEmpty from 'lodash/isEmpty';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import pick from "lodash/fp/pick";
+import isEmpty from "lodash/isEmpty";
 
-import { FILTERS, labelToId } from '../constant';
-import PaginationPages from './PaginationPages';
-import MonsterList from './MonsterList';
-import { propTypes as monsterTypes } from './MonsterCard';
-
-const filterMonsters = (filters, monsters) => {
-  const curryFilter = (rawPropName, filterGroupId) =>
-    filter(monster => {
-      const monsterProp = prop([rawPropName], monster);
-      const filterGroup = prop([filterGroupId], filters);
-      if (isEmpty(filterGroup)) return true;
-      return filterGroup.includes(labelToId(filterGroupId, monsterProp));
-    });
-
-  const filterPipe = pipe(
-    curryFilter(FILTERS.RACES.rawPropName, FILTERS.RACES.id),
-    curryFilter(FILTERS.STARS.rawPropName, FILTERS.STARS.id),
-    curryFilter(FILTERS.ATTRIBUTES.rawPropName, FILTERS.ATTRIBUTES.id),
-  );
-
-  return filterPipe(monsters);
-};
+import PaginationPages from "./PaginationPages";
+import MonsterList from "./MonsterList";
+import { propTypes as monsterTypes } from "./MonsterCard";
+import { getFilteredMonsters } from "./utils/filters";
 
 function SectionList(props) {
-  const { monsters, filters, initialPage, cardPerPage } = props;
+  const { monsters, filters, initialPage, cardPerPage, searchStr } = props;
   const [currentPage, setPage] = useState(initialPage);
   const handleClick = pageNum => setPage(pageNum);
 
-  const filteredMonsters = filterMonsters(filters, monsters);
+  let filteredMonsters;
+  filteredMonsters = getFilteredMonsters(filters, monsters);
+
+  if (!isEmpty(searchStr)) {
+    filteredMonsters = filteredMonsters.filter(monster => {
+      const {
+        monsterName,
+        leaderName,
+        leaderDescription,
+        activeName,
+        activeDescription
+      } = pick(
+        [
+          "monsterName",
+          "leaderName",
+          "leaderDescription",
+          "activeName",
+          "activeDescription"
+        ],
+        monster
+      );
+
+      return (
+        activeDescription.some(desc => desc.includes(searchStr)) ||
+        activeName.some(name => name.includes(searchStr)) ||
+        monsterName.includes(searchStr) ||
+        leaderName.includes(searchStr) ||
+        leaderDescription.includes(searchStr)
+      );
+    });
+  }
+
   const totalPages = Math.ceil(filteredMonsters.length / cardPerPage);
 
   const sliceBegin = (currentPage - 1) * cardPerPage;
   const slicedMonsters = filteredMonsters.slice(
     sliceBegin,
-    sliceBegin + cardPerPage,
+    sliceBegin + cardPerPage
   );
 
   useEffect(() => {
@@ -51,7 +62,7 @@ function SectionList(props) {
     <h1>找不到搜尋結果</h1>
   ) : (
     <>
-      <MonsterList slicedMonsters={slicedMonsters} />
+      <MonsterList slicedMonsters={slicedMonsters} searchStr={searchStr} />
       <Pagination className="d-flex justify-content-center">
         <PaginationItem disabled={currentPage === 1}>
           <PaginationLink first onClick={() => setPage(1)} />
@@ -83,7 +94,7 @@ function SectionList(props) {
 
 SectionList.defaultProps = {
   initialPage: 1,
-  cardPerPage: 15,
+  cardPerPage: 15
 };
 
 SectionList.propTypes = {
@@ -92,10 +103,10 @@ SectionList.propTypes = {
     ATTRIBUTES: PropTypes.arrayOf(PropTypes.string),
     RACES: PropTypes.arrayOf(PropTypes.string),
     STARS: PropTypes.arrayOf(PropTypes.string),
-    TAGS: PropTypes.arrayOf(PropTypes.string),
+    TAGS: PropTypes.arrayOf(PropTypes.string)
   }),
   initialPage: PropTypes.number.isRequired,
-  cardPerPage: PropTypes.number.isRequired,
+  cardPerPage: PropTypes.number.isRequired
 };
 
 export default SectionList;

@@ -1,5 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import Highlighter from "react-highlight-words";
 import {
   Card,
   Row,
@@ -7,23 +8,23 @@ import {
   ListGroup,
   ListGroupItem,
   ListGroupItemHeading,
-  ListGroupItemText,
-} from 'reactstrap';
-import pipe from 'lodash/fp/pipe';
-import map from 'lodash/fp/map';
-import split from 'lodash/fp/split';
-import flatten from 'lodash/fp/flatten';
+  ListGroupItemText
+} from "reactstrap";
+import pipe from "lodash/fp/pipe";
+import map from "lodash/fp/map";
+import split from "lodash/fp/split";
+import flatten from "lodash/fp/flatten";
 
-import ImageMacher from './ImageMacher';
+import ImageMacher from "./ImageMacher";
 
 const semiBreakLine = pipe(
-  split('；'),
-  map(split('。')),
-  flatten,
+  split("；"),
+  map(split("。")),
+  flatten
 );
 
 function MonsterCard(props) {
-  const { monster } = props;
+  const { monster, searchStr } = props;
 
   return (
     <Card>
@@ -33,9 +34,19 @@ function MonsterCard(props) {
             <Col sm="1">
               <img src={monster.thumbnail} alt={monster.monsterName} />
             </Col>
-            <Col sm="4" className="d-flex align-items-center">
-              <a className="text-dark" href={monster['monsterLink-href']} target="_blank" rel="noopener noreferrer">
-                <h3 className="m-0">{monster.monsterName}</h3>
+            <Col sm="3" className="d-flex align-items-center">
+              <a
+                className="text-dark"
+                href={monster["monsterLink-href"]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="m-0">
+                  <Highlighter
+                    searchWords={[searchStr]}
+                    textToHighlight={monster.monsterName}
+                  />
+                </h3>
               </a>
             </Col>
             <Col className="d-flex align-items-center">
@@ -55,10 +66,12 @@ function MonsterCard(props) {
         </ListGroupItem>
         {monster.activeName.map((name, idx) => (
           <ListGroupItem key={idx}>
-            <ListGroupItemHeading>{name}</ListGroupItemHeading>
+            <ListGroupItemHeading>
+              <Highlighter searchWords={[searchStr]} textToHighlight={name} />
+            </ListGroupItemHeading>
             {semiBreakLine(monster.activeDescription[idx]).map((line, idx) => (
               <ListGroupItemText className="mb-0" key={idx}>
-                {line}
+                <Highlighter searchWords={[searchStr]} textToHighlight={line} />
               </ListGroupItemText>
             ))}
           </ListGroupItem>
@@ -67,9 +80,17 @@ function MonsterCard(props) {
           隊長技
         </ListGroupItem>
         <ListGroupItem>
-          <ListGroupItemHeading>{monster.leaderName}</ListGroupItemHeading>
+          <ListGroupItemHeading>
+            <Highlighter
+              searchWords={[searchStr]}
+              textToHighlight={monster.leaderName}
+            />
+          </ListGroupItemHeading>
           <ListGroupItemText className="mb-1">
-            {monster.leaderDescription}
+            <Highlighter
+              searchWords={[searchStr]}
+              textToHighlight={monster.leaderDescription}
+            />
           </ListGroupItemText>
         </ListGroupItem>
       </ListGroup>
@@ -87,8 +108,8 @@ export const propTypes = {
     leaderName: PropTypes.string,
     leaderDescription: PropTypes.string,
     activeName: PropTypes.arrayOf(PropTypes.string),
-    activeDescription: PropTypes.arrayOf(PropTypes.string),
-  }),
+    activeDescription: PropTypes.arrayOf(PropTypes.string)
+  })
 };
 
 MonsterCard.propTypes = propTypes;
