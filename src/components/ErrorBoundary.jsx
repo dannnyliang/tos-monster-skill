@@ -1,29 +1,29 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { isFunction } from 'lodash';
+import { Component } from "react";
+import PropTypes from "prop-types";
+import { isFunction } from "lodash";
 
 class ErrorBoundary extends Component {
   state = {
     error: null,
-    errorInfo: null,
+    errorInfo: null
   };
 
   componentDidCatch(error, errorInfo) {
     this.props.onError({
       error,
       errorInfo,
-      clearError: this.clearError,
+      clearError: this.clearError
     });
     this.setState({
       error,
-      errorInfo,
+      errorInfo
     });
   }
 
   clearError = () => {
     this.setState({
       error: null,
-      errorInfo: null,
+      errorInfo: null
     });
   };
 
@@ -35,7 +35,7 @@ class ErrorBoundary extends Component {
         ? renderError({
             error,
             errorInfo,
-            clearError: this.clearError,
+            clearError: this.clearError
           })
         : renderError;
     }
@@ -45,12 +45,12 @@ class ErrorBoundary extends Component {
 
 ErrorBoundary.propTypes = {
   onError: PropTypes.func,
-  renderError: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  renderError: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 };
 
 ErrorBoundary.defaultProps = {
   onError: console.error, // eslint-disable-line no-console
-  renderError: null,
+  renderError: null
 };
 
 export default ErrorBoundary;

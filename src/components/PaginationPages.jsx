@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { PaginationItem, PaginationLink } from 'reactstrap';
+import { PaginationItem, PaginationLink } from "reactstrap";
 
 function PaginationPages(props) {
   const { currentPage, totalPages, handleClick } = props;
@@ -25,7 +25,7 @@ function PaginationPages(props) {
 
     // get pageList
     pageList = Array.from(new Array(displayPagesLimit)).map(
-      (_, idx) => idx + minPage,
+      (_, idx) => idx + minPage
     );
   }
 
@@ -41,7 +41,7 @@ function PaginationPages(props) {
 PaginationPages.propTypes = {
   currentPage: PropTypes.number,
   totalPages: PropTypes.number,
-  handleClick: PropTypes.func,
+  handleClick: PropTypes.func
 };
 
 export default PaginationPages;

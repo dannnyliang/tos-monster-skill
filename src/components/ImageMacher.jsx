@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import lowerCase from 'lodash/lowerCase';
+import React, { useState, useEffect } from "react";
+import lowerCase from "lodash/lowerCase";
 
-import { ATTRIBUTES, RACES } from '../constant';
+import { ATTRIBUTES, RACES } from "../constant";
 
 const reference = (category, type) => {
   switch (category) {
-    case 'race':
+    case "race":
       const race = Object.values(RACES).find(({ label }) => label === type);
       return lowerCase(race.id);
 
-    case 'attribute':
+    case "attribute":
       const attribute = Object.values(ATTRIBUTES).find(
-        ({ label }) => label === type,
+        ({ label }) => label === type
       );
       return lowerCase(attribute.id);
 
@@ -25,7 +25,7 @@ function ImageMacher(props) {
 
   const [imageTag, setImageTag] = useState({
     image: <img src="" alt="" width="40" height="40" />,
-    isImported: false,
+    isImported: false
   });
   const type = reference(category, label);
 
@@ -34,7 +34,7 @@ function ImageMacher(props) {
     import(`../asset/images/${category}-${type}.png`).then(img => {
       setImageTag(() => ({
         image: <img src={img.default} alt="" width="40" height="40" />,
-        isImported: true,
+        isImported: true
       }));
     });
   });
