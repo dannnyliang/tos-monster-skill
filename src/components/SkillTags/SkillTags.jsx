@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   FormGroup,
   InputGroup,
@@ -8,17 +8,17 @@ import {
   Badge
 } from "reactstrap";
 
-import useSkillTags from "./useSkillTags";
+import { TagContext } from "../../App";
 
 function Tag(props) {
-  const { id, tag, removeSkillTag } = props;
+  const { id, tag, removeListTag } = props;
   return (
     <Badge className="d-inline-flex p-2 mr-2 mb-2" color="info" pill>
       <h6 className="m-0 mr-4">{tag}</h6>
       <h6
         className="m-0"
         style={{ cursor: "pointer", color: "red" }}
-        onClick={() => removeSkillTag(id)}
+        onClick={() => removeListTag(id)}
       >
         ✘
       </h6>
@@ -28,7 +28,9 @@ function Tag(props) {
 
 function SkillTags() {
   const [tag, setTag] = useState("");
-  const { tagList, addSkillTag, removeSkillTag } = useSkillTags();
+  const { tagList, isLoading, addListTag, removeListTag } = useContext(
+    TagContext
+  );
   return (
     <FormGroup>
       <legend>技能標籤</legend>
@@ -39,7 +41,7 @@ function SkillTags() {
             size="sm"
             color="secondary"
             onClick={() => {
-              addSkillTag(tag);
+              addListTag([...Object.values(tagList), tag]);
               setTag("");
             }}
           >
@@ -47,7 +49,7 @@ function SkillTags() {
           </Button>
         </InputGroupAddon>
       </InputGroup>
-      {Object.keys(tagList).length === 0 ? (
+      {isLoading ? (
         <div>Loading...</div>
       ) : (
         Object.keys(tagList).map(key => (
@@ -55,7 +57,7 @@ function SkillTags() {
             key={key}
             id={key}
             tag={tagList[key]}
-            removeSkillTag={removeSkillTag}
+            removeListTag={removeListTag}
           />
         ))
       )}

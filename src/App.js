@@ -3,15 +3,17 @@ import { Container, Row, Col } from "reactstrap";
 
 import monsters from "./tosMonsters";
 import { FILTERS } from "./constant";
-import ErrorBoundary from "./components/ErrorBoundary";
 import SectionList from "./components/SectionList";
 import SectionPanel from "./components/SectionPanel";
+import useSkillTags from "./components/SkillTags/useSkillTags";
 
 export const initialFilters = () =>
   Object.keys(FILTERS).reduce(
     (filters, filterKey) => ({ ...filters, [filterKey]: [] }),
     {}
   );
+
+export const TagContext = React.createContext();
 
 function App() {
   const [filters, setFilters] = useState(initialFilters());
@@ -35,7 +37,7 @@ function App() {
   };
 
   return (
-    <ErrorBoundary renderError={<div>ERROR!!</div>}>
+    <TagContext.Provider value={useSkillTags()}>
       <Container fluid>
         <Row>
           <Col
@@ -62,7 +64,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-    </ErrorBoundary>
+    </TagContext.Provider>
   );
 }
 

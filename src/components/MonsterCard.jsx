@@ -15,6 +15,7 @@ import map from "lodash/fp/map";
 import split from "lodash/fp/split";
 import flatten from "lodash/fp/flatten";
 
+import AsyncMultiSelect from "./AsyncMultiSelect";
 import ImageMacher from "./ImageMacher";
 
 const semiBreakLine = pipe(
@@ -92,6 +93,13 @@ function MonsterCard(props) {
               textToHighlight={monster.leaderDescription}
             />
           </ListGroupItemText>
+        </ListGroupItem>
+        <ListGroupItem>
+          <AsyncMultiSelect
+            monsterId={monster.monsterId}
+            getValuesOnClose={props => console.log(props)}
+            closeMenuOnSelect={false}
+          />
         </ListGroupItem>
       </ListGroup>
     </Card>
