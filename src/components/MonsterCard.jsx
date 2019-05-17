@@ -15,7 +15,7 @@ import map from "lodash/fp/map";
 import split from "lodash/fp/split";
 import flatten from "lodash/fp/flatten";
 
-import AsyncMultiSelect from "./AsyncMultiSelect";
+import MonsterTags from "./MonsterTags";
 import ImageMacher from "./ImageMacher";
 
 const semiBreakLine = pipe(
@@ -94,11 +94,14 @@ function MonsterCard(props) {
             />
           </ListGroupItemText>
         </ListGroupItem>
+        <ListGroupItem
+          className="py-0"
+          style={{ color: "#6e8767", backgroundColor: "#cae3c3" }}
+        >
+          技能標籤
+        </ListGroupItem>
         <ListGroupItem>
-          <AsyncMultiSelect
-            monsterId={monster.monsterId}
-            closeMenuOnSelect={false}
-          />
+          <MonsterTags monsterId={monster.monsterId} />
         </ListGroupItem>
       </ListGroup>
     </Card>

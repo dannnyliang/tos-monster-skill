@@ -1,48 +1,15 @@
 import React, { useState, useContext } from "react";
-import classnames from "classnames/bind";
 import {
   FormGroup,
   InputGroup,
   Input,
   InputGroupAddon,
-  Button,
-  Badge
+  Button
 } from "reactstrap";
+import prop from "lodash/fp/prop";
 
-import { TagContext } from "../../App";
-import styles from "./skillTag.module.scss";
-
-const cx = classnames.bind(styles);
-
-function Tag(props) {
-  const { tagName, handleClick, handleCancelSelect, removeListTag } = props;
-
-  return (
-    <div className="d-inline-block mr-2 mb-2">
-      <input type="checkbox" id={tagName} className={cx("badge-checkbox")} />
-      <label htmlFor={tagName}>
-        <Badge
-          className={cx("d-flex", "p-2", "badge")}
-          pill
-          color={null}
-          onClick={() => handleClick(tagName)}
-        >
-          <h6 className={cx("m-0", "mr-4", "name")}>{tagName}</h6>
-          <h6
-            className={cx("m-0", "remove-btn")}
-            onClick={e => {
-              e.stopPropagation();
-              handleCancelSelect(tagName);
-              removeListTag(tagName);
-            }}
-          >
-            ✘
-          </h6>
-        </Badge>
-      </label>
-    </div>
-  );
-}
+import TagBadge from "../TagBadge";
+import { TagContext, UserContext } from "../../App";
 
 function SkillTags(props) {
   const { setFilters } = props;
@@ -50,6 +17,7 @@ function SkillTags(props) {
   const { tagList, isLoading, addListTag, removeListTag } = useContext(
     TagContext
   );
+  const { user } = useContext(UserContext);
 
   const handleClick = selectedTag =>
     setFilters(state => {
@@ -75,31 +43,33 @@ function SkillTags(props) {
   return (
     <FormGroup>
       <legend>技能標籤</legend>
-      <InputGroup className="mb-2">
-        <Input
-          bsSize="sm"
-          value={tagInput}
-          onChange={e => setTagInput(e.target.value)}
-        />
-        <InputGroupAddon addonType="append">
-          <Button
-            size="sm"
-            color="secondary"
-            onClick={() => {
-              addListTag([...Object.values(tagList), tagInput]);
-              setTagInput("");
-            }}
-          >
-            新增標籤
-          </Button>
-        </InputGroupAddon>
-      </InputGroup>
+      {prop(["role"], user) === "admin" && (
+        <InputGroup className="mb-2">
+          <Input
+            bsSize="sm"
+            value={tagInput}
+            onChange={e => setTagInput(e.target.value)}
+          />
+          <InputGroupAddon addonType="append">
+            <Button
+              size="sm"
+              color="secondary"
+              onClick={() => {
+                addListTag([...Object.values(tagList), tagInput]);
+                setTagInput("");
+              }}
+            >
+              新增標籤
+            </Button>
+          </InputGroupAddon>
+        </InputGroup>
+      )}
       {isLoading ? (
         <div>Loading...</div>
       ) : (
         <div>
           {Object.keys(tagList).map(key => (
-            <Tag
+            <TagBadge
               key={key}
               tagName={tagList[key]}
               handleClick={handleClick}

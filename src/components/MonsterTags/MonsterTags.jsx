@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import Select from "react-select";
+import prop from "lodash/fp/prop";
+
 import useSelectOptions from "./useSelectOptions";
 import useSelectedValues from "./useSelectedValues";
-import { TagContext } from "../../App";
+import { TagContext, UserContext } from "../../App";
 
-function AsyncMultiSelect(props) {
+function MonsterTags(props) {
   const { monsterId } = props;
+  const { user } = useContext(UserContext);
   const { getTagList, getMonsterTags, setMonsterSkillTags } = useContext(
     TagContext
   );
@@ -17,16 +20,24 @@ function AsyncMultiSelect(props) {
     uploadValues: setMonsterSkillTags
   });
 
-  return (
+  return prop(["role"], user) === "admin" ? (
     <Select
       isMulti
       isClearable={false}
       onChange={handleChange}
       value={selectedOptions}
       options={options}
-      {...props}
+      closeMenuOnSelect={false}
     />
+  ) : (
+    <div className="d-flex">
+      {selectedOptions.map(({ value, label }) => (
+        <div key={value} className="mr-2">
+          {label}
+        </div>
+      ))}
+    </div>
   );
 }
 
-export default AsyncMultiSelect;
+export default MonsterTags;
