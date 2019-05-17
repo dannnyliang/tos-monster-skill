@@ -2,29 +2,37 @@ import { useState, useEffect } from "react";
 import { database } from "firebase";
 import isEqual from "lodash/isEqual";
 
-/**
- * Issues:
- * - 刪除指定的 tag， render monsterCard 時要把被刪掉的 tag 濾掉，並且更新 db
- */
-
 const useSkillTags = () => {
   const [tagList, setTagList] = useState({});
+  const [monstersTags, setMonstersTags] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getTagList().then(res => {
-      if (!isEqual(res, tagList)) {
-        setTagList(res);
+    getTag().then(res => {
+      const { tagList: dbTagList, ...dbMonstersTags } = res;
+      if (!isEqual(dbTagList, tagList)) {
+        setTagList(dbTagList);
+      }
+      if (!isEqual(dbMonstersTags, monstersTags)) {
+        setMonstersTags(dbMonstersTags);
       }
       setIsLoading(false);
     });
   });
 
+  const getTag = () => {
+    return new Promise((resolve, reject) => {
+      database()
+        .ref("tags")
+        .on("value", snapShot => resolve(snapShot.val()));
+    });
+  };
+
   const getTagList = () => {
     return new Promise((resolve, reject) => {
       database()
-        .ref("tags/tagList")
-        .on("value", snapShot => resolve(snapShot.val()));
+        .ref("tags")
+        .on("value", snapShot => resolve(snapShot.val().tagList));
     });
   };
 
@@ -50,15 +58,40 @@ const useSkillTags = () => {
       .set(tags);
   };
 
-  const removeListTag = tagKey => {
-    setIsLoading(true);
-    return database()
-      .ref(`tags/tagList/${tagKey}`)
-      .remove();
+  const removeListTag = tagName => {
+    const modifyIds = Object.keys(monstersTags).filter(key =>
+      monstersTags[key].includes(tagName)
+    );
+
+    const getNewMonsterTags = id => {
+      const newMonsterTags = [...monstersTags[id]];
+      const idx = newMonsterTags.indexOf(tagName);
+      if (idx > -1) newMonsterTags.splice(idx, 1);
+      return newMonsterTags;
+    };
+
+    const getNewTagList = tagName => {
+      const newTagList = [...tagList];
+      const idx = newTagList.indexOf(tagName);
+      if (idx > -1) newTagList.splice(idx, 1);
+      return newTagList;
+    };
+
+    Promise.all([
+      database()
+        .ref("tags/tagList")
+        .set(getNewTagList(tagName)),
+      modifyIds.forEach(id =>
+        database()
+          .ref(`tags/${id}`)
+          .set(getNewMonsterTags(id))
+      )
+    ]);
   };
 
   return {
     tagList,
+    monstersTags,
     isLoading,
     getTagList,
     getMonsterTags,

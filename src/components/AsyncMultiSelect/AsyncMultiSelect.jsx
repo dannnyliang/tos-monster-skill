@@ -20,6 +20,7 @@ function AsyncMultiSelect(props) {
   return (
     <Select
       isMulti
+      isClearable={false}
       onChange={handleChange}
       value={selectedOptions}
       options={options}

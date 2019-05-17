@@ -19,23 +19,6 @@ function App() {
   const [filters, setFilters] = useState(initialFilters());
   const [searchStr, setSearchStr] = useState("");
 
-  const handleClick = group => evt => {
-    const id = evt.target.id;
-
-    setFilters(state => {
-      if (state[group].includes(id)) {
-        return {
-          ...state,
-          [group]: state[group].filter(item => item !== id)
-        };
-      }
-      return {
-        ...state,
-        [group]: [...state[group], id]
-      };
-    });
-  };
-
   return (
     <TagContext.Provider value={useSkillTags()}>
       <Container fluid>
@@ -49,10 +32,7 @@ function App() {
               borderRight: "1px solid rgba(0, 0, 0, 0.125)"
             }}
           >
-            <SectionPanel
-              handleClick={handleClick}
-              setSearchStr={setSearchStr}
-            />
+            <SectionPanel setFilters={setFilters} setSearchStr={setSearchStr} />
           </Col>
           <Col md={{ size: 8, offset: 4 }}>
             <SectionList

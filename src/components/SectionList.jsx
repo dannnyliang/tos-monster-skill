@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import PropTypes from "prop-types";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import pick from "lodash/fp/pick";
@@ -8,6 +8,7 @@ import PaginationPages from "./PaginationPages";
 import MonsterList from "./MonsterList";
 import { propTypes as monsterTypes } from "./MonsterCard";
 import { getFilteredMonsters } from "./utils/filters";
+import { TagContext } from "../App";
 
 function SectionList(props) {
   const { monsters, filters, initialPage, cardPerPage, searchStr } = props;
@@ -16,6 +17,17 @@ function SectionList(props) {
 
   let filteredMonsters;
   filteredMonsters = getFilteredMonsters(filters, monsters);
+
+  const { monstersTags } = useContext(TagContext);
+
+  if (!isEmpty(filters.TAGS)) {
+    const filteredIds = Object.keys(monstersTags).filter(key =>
+      filters.TAGS.every(tag => monstersTags[key].includes(tag))
+    );
+    filteredMonsters = filteredMonsters.filter(({ monsterId }) =>
+      filteredIds.includes(monsterId)
+    );
+  }
 
   if (!isEmpty(searchStr)) {
     filteredMonsters = filteredMonsters.filter(monster => {

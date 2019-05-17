@@ -1,0 +1,26 @@
+.badge-checkbox {
+  display: none;
+}
+
+.badge-checkbox + label {
+  .badge {
+    cursor: pointer;
+    border: solid 2px #cae3c3;
+  }
+}
+
+.badge-checkbox:checked + label {
+  .badge {
+    border: solid 2px white;
+    background-color: #cae3c3;
+  }
+}
+
+.name,
+.remove-btn {
+  color: #6e8767;
+}
+
+.remove-btn:hover {
+  color: red;
+}

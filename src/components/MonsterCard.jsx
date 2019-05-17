@@ -97,7 +97,6 @@ function MonsterCard(props) {
         <ListGroupItem>
           <AsyncMultiSelect
             monsterId={monster.monsterId}
-            getValuesOnClose={props => console.log(props)}
             closeMenuOnSelect={false}
           />
         </ListGroupItem>

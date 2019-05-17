@@ -1,12 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Form,
-  FormGroup,
-  CustomInput,
-  InputGroup,
-  Input,
-} from "reactstrap";
+import { Form, FormGroup, CustomInput, InputGroup, Input } from "reactstrap";
 
 import SkillTags from "./SkillTags";
 import { FILTERS, ATTRIBUTES, RACES, STARS } from "../constant";
@@ -59,7 +53,24 @@ function SearchInput(props) {
 }
 
 function SectionPanel(props) {
-  const { handleClick, setSearchStr, setCanSearchByStr } = props;
+  const { setFilters, setSearchStr } = props;
+
+  const handleClick = group => evt => {
+    const id = evt.target.id;
+
+    setFilters(state => {
+      if (state[group].includes(id)) {
+        return {
+          ...state,
+          [group]: state[group].filter(item => item !== id)
+        };
+      }
+      return {
+        ...state,
+        [group]: [...state[group], id]
+      };
+    });
+  };
 
   return (
     <div className="my-3">
@@ -82,11 +93,8 @@ function SectionPanel(props) {
           groupItems={STARS}
           handleClick={handleClick}
         />
-        <SearchInput
-          setSearchStr={setSearchStr}
-          setCanSearchByStr={setCanSearchByStr}
-        />
-        <SkillTags />
+        <SearchInput setSearchStr={setSearchStr} />
+        <SkillTags setFilters={setFilters} />
       </Form>
     </div>
   );

@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import isEqual from "lodash/isEqual";
 
-const useSelectOptions = getOptionsSync => {
+const useSelectOptions = getOptionsAsync => {
   const [options, setOptions] = useState([
     { value: "LOADING", label: "Loading...", isDisabled: true }
   ]);
 
   const fetchOptions = async () => {
-    const SyncOptions = await getOptionsSync();
+    const asyncOptions = await getOptionsAsync();
 
-    return Object.keys(SyncOptions).map(key => ({
+    return Object.keys(asyncOptions).map(key => ({
       value: key,
-      label: SyncOptions[key]
+      label: asyncOptions[key]
     }));
   };
 
