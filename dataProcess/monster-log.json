@@ -1,0 +1,16 @@
+{
+  "raw": {
+    "monsters": {
+      "description": "從神魔 wiki 上爬下來經過清理後的召喚獸資訓",
+      "total": 1973
+    },
+    "images": {
+      "description": "召喚獸縮圖，用於和 monsters combine",
+      "total": 2436
+    }
+  },
+  "transformed": {
+    "monsters": { "description": "已經 combine 好的資料", "total": 1973 }
+  },
+  "upadteTime": "2019-4-18 16:16:17"
+}

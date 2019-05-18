@@ -3392,177 +3392,6 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/c/c0/1100i.png/revision/latest/scale-to-width-down/60?cb=20160330123507&path-prefix=zh"
   },
   {
-    monsterName: "阿撒茲勒",
-    monsterId: "1101",
-    leaderName: "無影幻像 ‧ 水",
-    leaderDescription:
-      "水屬性攻擊力 2 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 水符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為水符石時，則兼具效果變為水屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "水",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "阿撒茲勒",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%98%BF%E6%92%92%E5%85%B9%E5%8B%92",
-    activeName: ["元素歸一 ‧ 水"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，水屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/7/77/1101i.png/revision/latest/scale-to-width-down/60?cb=20160314074946&path-prefix=zh"
-  },
-  {
-    monsterName: "代罪之泉 ‧ 阿撒茲勒",
-    monsterId: "1102",
-    leaderName: "無影幻像 ‧ 浪濤",
-    leaderDescription:
-      "水屬性攻擊力 3 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 水符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為水符石時，則兼具效果變為水屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "水",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "代罪之泉 ‧ 阿撒茲勒",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E4%BB%A3%E7%BD%AA%E4%B9%8B%E6%B3%89_%E2%80%A7_%E9%98%BF%E6%92%92%E5%85%B9%E5%8B%92",
-    activeName: ["元素歸一 ‧ 水"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，水屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/d/d1/1102i.png/revision/latest/scale-to-width-down/60?cb=20160314074946&path-prefix=zh"
-  },
-  {
-    monsterName: "亞巴頓",
-    monsterId: "1103",
-    leaderName: "無影幻像 ‧ 火",
-    leaderDescription:
-      "火屬性攻擊力 2 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 火符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為火符石時，則兼具效果變為火屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "火",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "亞巴頓",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E4%BA%9E%E5%B7%B4%E9%A0%93",
-    activeName: ["元素歸一 ‧ 火"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，火屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/44/1103i.png/revision/latest/scale-to-width-down/60?cb=20160314074946&path-prefix=zh"
-  },
-  {
-    monsterName: "毀滅之炎 ‧ 亞巴頓",
-    monsterId: "1104",
-    leaderName: "無影幻像 ‧ 熾燄",
-    leaderDescription:
-      "火屬性攻擊力 3 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 火符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為火符石時，則兼具效果變為火屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "火",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "毀滅之炎 ‧ 亞巴頓",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%AF%80%E6%BB%85%E4%B9%8B%E7%82%8E_%E2%80%A7_%E4%BA%9E%E5%B7%B4%E9%A0%93",
-    activeName: ["元素歸一 ‧ 火"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，火屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/35/1104i.png/revision/latest/scale-to-width-down/60?cb=20160314074946&path-prefix=zh"
-  },
-  {
-    monsterName: "薩麥爾",
-    monsterId: "1105",
-    leaderName: "無影幻像 ‧ 木",
-    leaderDescription:
-      "木屬性攻擊力 2 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 木符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為木符石時，則兼具效果變為木屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "木",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "薩麥爾",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%96%A9%E9%BA%A5%E7%88%BE",
-    activeName: ["元素歸一 ‧ 木"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，木屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/59/1105i.png/revision/latest/scale-to-width-down/60?cb=20160314074947&path-prefix=zh"
-  },
-  {
-    monsterName: "盤木智者 ‧ 薩麥爾",
-    monsterId: "1106",
-    leaderName: "無影幻像 ‧ 藤木",
-    leaderDescription:
-      "木屬性攻擊力 3 倍，每回合場上數量最多的 1 種屬性符石兼具 50% 木符石效果 (可疊加)，如場上數量最多的 1 種屬性符石為木符石時，則兼具效果變為木屬性攻擊力提升 1.4 倍 (可疊加)",
-    attribute: "木",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "盤木智者 ‧ 薩麥爾",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%9B%A4%E6%9C%A8%E6%99%BA%E8%80%85_%E2%80%A7_%E8%96%A9%E9%BA%A5%E7%88%BE",
-    activeName: ["元素歸一 ‧ 木"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，木屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/44/1106i.png/revision/latest/scale-to-width-down/60?cb=20160314074947&path-prefix=zh"
-  },
-  {
-    monsterName: "別西卜",
-    monsterId: "1107",
-    leaderName: "流螢結陣 ‧ 初",
-    leaderDescription:
-      "光屬性攻擊力 2 倍，並延長移動符石時間 1 秒；消除一組 5 粒或以上的光符石時，光屬性攻擊力額外提升 1.5 倍 (可疊加)",
-    attribute: "光",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "別西卜",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%88%A5%E8%A5%BF%E5%8D%9C",
-    activeName: ["結界術 ‧ 玄光"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒光符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/37/1107i.png/revision/latest/scale-to-width-down/60?cb=20160314074947&path-prefix=zh"
-  },
-  {
-    monsterName: "蒼蠅之王 ‧ 別西卜",
-    monsterId: "1108",
-    leaderName: "流螢結陣 ‧ 繼",
-    leaderDescription:
-      "光屬性攻擊力 3 倍，並延長移動符石時間 1 秒；消除一組 5 粒或以上的光符石時，光屬性攻擊力額外提升 1.5 倍 (可疊加)",
-    attribute: "光",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "蒼蠅之王 ‧ 別西卜",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%92%BC%E8%A0%85%E4%B9%8B%E7%8E%8B_%E2%80%A7_%E5%88%A5%E8%A5%BF%E5%8D%9C",
-    activeName: ["結界術 ‧ 玄光"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒光符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/e/e5/1108i.png/revision/latest/scale-to-width-down/60?cb=20160314074947&path-prefix=zh"
-  },
-  {
-    monsterName: "莫斯提馬",
-    monsterId: "1109",
-    leaderName: "幽冥結陣 ‧ 初",
-    leaderDescription:
-      "暗屬性攻擊力 2 倍，並延長移動符石時間 1 秒；消除一組 5 粒或以上的暗符石時，暗屬性攻擊力額外提升 1.5 倍 (可疊加)",
-    attribute: "暗",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "莫斯提馬",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A6%AC",
-    activeName: ["結界術 ‧ 幽冥"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒暗符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/46/1109i.png/revision/latest/scale-to-width-down/60?cb=20160314074947&path-prefix=zh"
-  },
-  {
     monsterName: "青幽狼人",
     monsterId: "111",
     leaderName: "野獸之力",
@@ -3577,177 +3406,6 @@ const monsters = [
     activeDescription: ["3 回合內，無視全體敵人 75% 的防禦力"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/2/24/111i.png/revision/latest/scale-to-width-down/60?cb=20140618165407&path-prefix=zh"
-  },
-  {
-    monsterName: "邪心之靈 ‧ 莫斯提馬",
-    monsterId: "1110",
-    leaderName: "幽冥結陣 ‧ 繼",
-    leaderDescription:
-      "暗屬性攻擊力 3 倍，並延長移動符石時間 1 秒；消除一組 5 粒或以上的暗符石時，暗屬性攻擊力額外提升 1.5 倍 (可疊加)",
-    attribute: "暗",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "邪心之靈 ‧ 莫斯提馬",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%82%AA%E5%BF%83%E4%B9%8B%E9%9D%88_%E2%80%A7_%E8%8E%AB%E6%96%AF%E6%8F%90%E9%A6%AC",
-    activeName: ["結界術 ‧ 幽冥"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒暗符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/93/1110i.png/revision/latest/scale-to-width-down/60?cb=20160314074948&path-prefix=zh"
-  },
-  {
-    monsterName: "寒霜幼龍",
-    monsterId: "1111",
-    leaderName: "海之力",
-    leaderDescription: "水屬性攻擊力 1.5 倍",
-    attribute: "水",
-    race: "龍類",
-    star: "2★",
-    monsterLink: "寒霜幼龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%AF%92%E9%9C%9C%E5%B9%BC%E9%BE%8D",
-    activeName: ["防禦姿勢 ‧ 水"],
-    activeDescription: ["火符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/a/ab/1111i.png/revision/latest/scale-to-width-down/60?cb=20160314074948&path-prefix=zh"
-  },
-  {
-    monsterName: "寒霜龍",
-    monsterId: "1112",
-    leaderName: "海之力",
-    leaderDescription: "水屬性攻擊力 1.5 倍",
-    attribute: "水",
-    race: "龍類",
-    star: "3★",
-    monsterLink: "寒霜龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%AF%92%E9%9C%9C%E9%BE%8D",
-    activeName: ["元素歸一 ‧ 水"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，水屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/1e/1112i.png/revision/latest/scale-to-width-down/60?cb=20160314074948&path-prefix=zh"
-  },
-  {
-    monsterName: "吐焰幼龍",
-    monsterId: "1113",
-    leaderName: "炎之力",
-    leaderDescription: "火屬性攻擊力 1.5 倍",
-    attribute: "火",
-    race: "龍類",
-    star: "2★",
-    monsterLink: "吐焰幼龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%90%90%E7%84%B0%E5%B9%BC%E9%BE%8D",
-    activeName: ["防禦姿勢 ‧ 火"],
-    activeDescription: ["木符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/7/71/1113i.png/revision/latest/scale-to-width-down/60?cb=20160314074949&path-prefix=zh"
-  },
-  {
-    monsterName: "吐焰龍",
-    monsterId: "1114",
-    leaderName: "炎之力",
-    leaderDescription: "火屬性攻擊力 1.5 倍",
-    attribute: "火",
-    race: "龍類",
-    star: "3★",
-    monsterLink: "吐焰龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%90%90%E7%84%B0%E9%BE%8D",
-    activeName: ["元素歸一 ‧ 火"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，火屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/e/e3/1114i.png/revision/latest/scale-to-width-down/60?cb=20160314074949&path-prefix=zh"
-  },
-  {
-    monsterName: "蝕地幼龍",
-    monsterId: "1115",
-    leaderName: "森之力",
-    leaderDescription: "木屬性攻擊力 1.5 倍",
-    attribute: "木",
-    race: "龍類",
-    star: "2★",
-    monsterLink: "蝕地幼龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%9D%95%E5%9C%B0%E5%B9%BC%E9%BE%8D",
-    activeName: ["防禦姿勢 ‧ 木"],
-    activeDescription: ["水符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/c/c7/1115i.png/revision/latest/scale-to-width-down/60?cb=20160314074949&path-prefix=zh"
-  },
-  {
-    monsterName: "蝕地龍",
-    monsterId: "1116",
-    leaderName: "森之力",
-    leaderDescription: "木屬性攻擊力 1.5 倍",
-    attribute: "木",
-    race: "龍類",
-    star: "3★",
-    monsterLink: "蝕地龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%9D%95%E5%9C%B0%E9%BE%8D",
-    activeName: ["元素歸一 ‧ 木"],
-    activeDescription: [
-      "1 回合內，消除符石的種類愈多，木屬性攻擊力提升愈多，最大提升至 2.2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/99/1116i.png/revision/latest/scale-to-width-down/60?cb=20160314074949&path-prefix=zh"
-  },
-  {
-    monsterName: "骸光幼龍",
-    monsterId: "1117",
-    leaderName: "聖之力",
-    leaderDescription: "光屬性攻擊力 1.5 倍",
-    attribute: "光",
-    race: "龍類",
-    star: "2★",
-    monsterLink: "骸光幼龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%AA%B8%E5%85%89%E5%B9%BC%E9%BE%8D",
-    activeName: ["防禦姿勢 ‧ 光"],
-    activeDescription: ["暗符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/5d/1117i.png/revision/latest/scale-to-width-down/60?cb=20160314074950&path-prefix=zh"
-  },
-  {
-    monsterName: "骸光龍",
-    monsterId: "1118",
-    leaderName: "聖之力",
-    leaderDescription: "光屬性攻擊力 1.5 倍",
-    attribute: "光",
-    race: "龍類",
-    star: "3★",
-    monsterLink: "骸光龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%AA%B8%E5%85%89%E9%BE%8D",
-    activeName: ["結界術 ‧ 玄光"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒光符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/3e/1118i.png/revision/latest/scale-to-width-down/60?cb=20160314074950&path-prefix=zh"
-  },
-  {
-    monsterName: "暗影幼龍",
-    monsterId: "1119",
-    leaderName: "邪之力",
-    leaderDescription: "暗屬性攻擊力 1.5 倍",
-    attribute: "暗",
-    race: "龍類",
-    star: "2★",
-    monsterLink: "暗影幼龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9A%97%E5%BD%B1%E5%B9%BC%E9%BE%8D",
-    activeName: ["防禦姿勢 ‧ 暗"],
-    activeDescription: ["光符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/b/b1/1119i.png/revision/latest/scale-to-width-down/60?cb=20160314074906&path-prefix=zh"
   },
   {
     monsterName: "白幽狼",
@@ -3766,184 +3424,6 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/b/b4/112i.png/revision/latest/scale-to-width-down/60?cb=20140618165411&path-prefix=zh"
   },
   {
-    monsterName: "暗影龍",
-    monsterId: "1120",
-    leaderName: "邪之力",
-    leaderDescription: "暗屬性攻擊力 1.5 倍",
-    attribute: "暗",
-    race: "龍類",
-    star: "3★",
-    monsterLink: "暗影龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9A%97%E5%BD%B1%E9%BE%8D",
-    activeName: ["結界術 ‧ 幽冥"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒暗符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/84/1120i.png/revision/latest/scale-to-width-down/60?cb=20160314074907&path-prefix=zh"
-  },
-  {
-    monsterName: "冰棘水龍",
-    monsterId: "1121",
-    leaderName: "龍之怒",
-    leaderDescription: "龍類攻擊力 2 倍",
-    attribute: "水",
-    race: "龍類",
-    star: "6★",
-    monsterLink: "冰棘水龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%86%B0%E6%A3%98%E6%B0%B4%E9%BE%8D",
-    activeName: ["龍淵之力"],
-    activeDescription: [
-      "1 回合內，隊伍的龍類成員愈多，水屬性及龍類攻擊力愈高，4 個龍類成員即可達至最大 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/61/1121i.png/revision/latest/scale-to-width-down/60?cb=20160330123527&path-prefix=zh"
-  },
-  {
-    monsterName: "翼火王龍",
-    monsterId: "1122",
-    leaderName: "魔之怒",
-    leaderDescription: "魔族攻擊力 2 倍",
-    attribute: "火",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "翼火王龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%BF%BC%E7%81%AB%E7%8E%8B%E9%BE%8D",
-    activeName: ["朦朧之間"],
-    activeDescription: [
-      "1 回合內，延長移動符石時間至 7 秒，所有成員無視屬性相剋"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/2/2f/1122i.png/revision/latest/scale-to-width-down/60?cb=20160723123455&path-prefix=zh"
-  },
-  {
-    monsterName: "朽蟲化龍",
-    monsterId: "1123",
-    leaderName: "龍之怒",
-    leaderDescription: "龍類攻擊力 2 倍",
-    attribute: "木",
-    race: "龍類",
-    star: "6★",
-    monsterLink: "朽蟲化龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9C%BD%E8%9F%B2%E5%8C%96%E9%BE%8D",
-    activeName: ["血魔法咒 ‧ 木"],
-    activeDescription: [
-      "消秏現有 30% 的生命力，1 回合內，消秏的生命力愈多，木屬性及魔族攻擊力提升愈多，消秏 5000 點生命力即可達至最大 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/8d/1123i.png/revision/latest/scale-to-width-down/60?cb=20160304115847&path-prefix=zh"
-  },
-  {
-    monsterName: "磷光骨龍",
-    monsterId: "1124",
-    leaderName: "魔之怒",
-    leaderDescription: "魔族攻擊力 2 倍",
-    attribute: "光",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "磷光骨龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%A3%B7%E5%85%89%E9%AA%A8%E9%BE%8D",
-    activeName: ["同化 ‧ 光"],
-    activeDescription: ["隨機將光屬性以外的一種符石轉化為光符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/a/ad/1124i.png/revision/latest/scale-to-width-down/60?cb=20160413130020&path-prefix=zh"
-  },
-  {
-    monsterName: "古鱗魔龍",
-    monsterId: "1125",
-    leaderName: "龍之怒",
-    leaderDescription: "龍類攻擊力 2 倍",
-    attribute: "暗",
-    race: "龍類",
-    star: "6★",
-    monsterLink: "古鱗魔龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%8F%A4%E9%B1%97%E9%AD%94%E9%BE%8D",
-    activeName: ["破空之力 ‧ 龍"],
-    activeDescription: [
-      "1 回合內，龍類攻擊力 2 倍，並無視全體敵人 90% 的防禦力"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/b/bf/1125i.png/revision/latest/scale-to-width-down/60?cb=20160427100550&path-prefix=zh"
-  },
-  {
-    monsterName: "寒霜冰姬 ‧ 雪女",
-    monsterId: "1126",
-    leaderName: "魔魅復甦 ‧ 凝水",
-    leaderDescription:
-      "水屬性攻擊力 2.5 倍及魔族回復力 2 倍；同時木、光和暗屬性傷害減少 50%。所有成員對木屬性目標時無視屬性相剋",
-    attribute: "水",
-    race: "魔族",
-    star: "7★",
-    monsterLink: "寒霜冰姬 ‧ 雪女",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%AF%92%E9%9C%9C%E5%86%B0%E5%A7%AC_%E2%80%A7_%E9%9B%AA%E5%A5%B3",
-    activeName: ["鐵壁陣勢 ‧ 水"],
-    activeDescription: ["火符石轉化為心強化符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/62/1126i.png/revision/latest/scale-to-width-down/60?cb=20160314074907&path-prefix=zh"
-  },
-  {
-    monsterName: "獄火赤鬼 ‧ 酒吞童子",
-    monsterId: "1127",
-    leaderName: "魔魅復甦 ‧ 凝火",
-    leaderDescription:
-      "火屬性攻擊力 2.5 倍及魔族回復力 2 倍；同時水、光和暗屬性傷害減少 50%。所有成員對水屬性目標時無視屬性相剋",
-    attribute: "火",
-    race: "魔族",
-    star: "7★",
-    monsterLink: "獄火赤鬼 ‧ 酒吞童子",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%8D%84%E7%81%AB%E8%B5%A4%E9%AC%BC_%E2%80%A7_%E9%85%92%E5%90%9E%E7%AB%A5%E5%AD%90",
-    activeName: ["魔之怨念 ‧ 火"],
-    activeDescription: [
-      "場上有附加效果時，1 回合內，火屬性攻擊力 1.5 倍及火屬性魔族攻擊力 2.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/b/b6/1127i.png/revision/latest/scale-to-width-down/60?cb=20160314074907&path-prefix=zh"
-  },
-  {
-    monsterName: "颶風怒號 ‧ 大天狗",
-    monsterId: "1128",
-    leaderName: "魔魅復甦 ‧ 凝木",
-    leaderDescription:
-      "木屬性攻擊力 2.5 倍及魔族回復力 2 倍；同時火、光和暗屬性傷害減少 50%。所有成員對火屬性目標時無視屬性相剋",
-    attribute: "木",
-    race: "魔族",
-    star: "7★",
-    monsterLink: "颶風怒號 ‧ 大天狗",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%A2%B6%E9%A2%A8%E6%80%92%E8%99%9F_%E2%80%A7_%E5%A4%A7%E5%A4%A9%E7%8B%97",
-    activeName: ["延緩"],
-    activeDescription: ["延遲全體敵人行動 1 回合"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/f0/1128i.png/revision/latest/scale-to-width-down/60?cb=20160314074907&path-prefix=zh"
-  },
-  {
-    monsterName: "噬靈血妖 ‧ 毛倡妓",
-    monsterId: "1129",
-    leaderName: "魔怒嘯天 ‧ 天雷陣",
-    leaderDescription:
-      "光屬性攻擊力 2.5 倍及光屬性魔族攻擊力 3.5 倍，並提升光屬性對暗屬性目標的攻擊力 (不包括主動技)",
-    attribute: "光",
-    race: "魔族",
-    star: "7★",
-    monsterLink: "噬靈血妖 ‧ 毛倡妓",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%99%AC%E9%9D%88%E8%A1%80%E5%A6%96_%E2%80%A7_%E6%AF%9B%E5%80%A1%E5%A6%93",
-    activeName: ["蓄能轉換 ‧ 煉光"],
-    activeDescription: [
-      "將累積戰鬥回合 (需要消除符石) +1 數量的符石轉化為光符石，最多 8 粒；當累積至最多 8 粒時發動技能，轉化的光符石會以光強化符石代替。發動技能後可轉換符石數將重新累積"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/83/1129i.png/revision/latest/scale-to-width-down/60?cb=20160314074908&path-prefix=zh"
-  },
-  {
     monsterName: "白幽狼人",
     monsterId: "113",
     leaderName: "野獸之力",
@@ -3958,185 +3438,6 @@ const monsters = [
     activeDescription: ["3 回合內，無視全體敵人 75% 的防禦力"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/0/09/113i.png/revision/latest/scale-to-width-down/60?cb=20140618165507&path-prefix=zh"
-  },
-  {
-    monsterName: "陰陽五行 ‧ 土蜘蛛",
-    monsterId: "1130",
-    leaderName: "魔怒嘯天 ‧ 冥極",
-    leaderDescription:
-      "暗屬性魔族攻擊力 3.5 倍，每消除一組暗符石，暗屬性攻擊力提升 0.5 倍，消除 3 組暗符石即可達至最高 5 倍",
-    attribute: "暗",
-    race: "魔族",
-    star: "7★",
-    monsterLink: "陰陽五行 ‧ 土蜘蛛",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%99%B0%E9%99%BD%E4%BA%94%E8%A1%8C_%E2%80%A7_%E5%9C%9F%E8%9C%98%E8%9B%9B",
-    activeName: ["狂魔暴戾 ‧ 強"],
-    activeDescription: ["魔族攻擊力提升 1.8 倍，效果持續至受到敵人攻擊"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/4d/1130i.png/revision/latest/scale-to-width-down/60?cb=20160314074908&path-prefix=zh"
-  },
-  {
-    monsterName: "索布兔騎士 ‧ 摩艾",
-    monsterId: "1131",
-    leaderName: "野獸之狂怒",
-    leaderDescription: "獸類攻擊力 2.5 倍",
-    attribute: "木",
-    race: "獸類",
-    star: "6★",
-    monsterLink: "索布兔騎士 ‧ 摩艾",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%B4%A2%E5%B8%83%E5%85%94%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E6%91%A9%E8%89%BE",
-    activeName: ["活心術"],
-    activeDescription: ["1 回合內，延長移動符石時間至 8 秒，並回復 50% 生命力"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/d/d9/1131i.png/revision/latest/scale-to-width-down/60?cb=20160317121745&path-prefix=zh"
-  },
-  {
-    monsterName: "森林暗鬼 ‧ 斯蘭達",
-    monsterId: "1132",
-    leaderName: "魔之狂怒",
-    leaderDescription: "魔族攻擊力 2.5 倍",
-    attribute: "暗",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "森林暗鬼 ‧ 斯蘭達",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%A3%AE%E6%9E%97%E6%9A%97%E9%AC%BC_%E2%80%A7_%E6%96%AF%E8%98%AD%E9%81%94",
-    activeName: ["暗夜獨行 ‧ 陰霾"],
-    activeDescription: [
-      "當場上只有 1 個敵人時，根據發動此技能時敵人的生命力觸發以下效果。\n\n敵人生命力 90% 或以上時：消耗敵人 20% 生命力，1 回合內，暗屬性攻擊力 2 倍。\n\n敵人生命力 50% 或以上，並少於 90% 時：2 回合內，暗屬性攻擊力 2 倍\n\n敵人生命力少於 50% 時：2 回合內，暗屬性攻擊力 2.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/9e/1132i.png/revision/latest/scale-to-width-down/60?cb=20160714111035&path-prefix=zh"
-  },
-  {
-    monsterName: "睿哲的開導 ‧ 安努",
-    monsterId: "1133",
-    leaderName: "元素之念 ‧ 光",
-    leaderDescription:
-      "光屬性攻擊力 2 倍；每直行消除 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 1 粒光符石",
-    attribute: "光",
-    race: "神族",
-    star: "6★",
-    monsterLink: "睿哲的開導 ‧ 安努",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%9D%BF%E5%93%B2%E7%9A%84%E9%96%8B%E5%B0%8E_%E2%80%A7_%E5%AE%89%E5%8A%AA",
-    activeName: ["冷煞霜刃"],
-    activeDescription: [
-      "1 回合內，消除的符石數量愈多，全隊攻擊力愈高，消除 30 粒可達至最大 2.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/8a/1133i.png/revision/latest/scale-to-width-down/60?cb=20160519093616&path-prefix=zh"
-  },
-  {
-    monsterName: "曠古戰王 ‧ 吉爾伽美什",
-    monsterId: "1134",
-    leaderName: "眾神之狂怒",
-    leaderDescription: "神族攻擊力 2.5 倍",
-    attribute: "水",
-    race: "神族",
-    star: "6★",
-    monsterLink: "曠古戰王 ‧ 吉爾伽美什",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9B%A0%E5%8F%A4%E6%88%B0%E7%8E%8B_%E2%80%A7_%E5%90%89%E7%88%BE%E4%BC%BD%E7%BE%8E%E4%BB%80",
-    activeName: ["同仇念"],
-    activeDescription: [
-      "1 回合內，全隊攻擊力 1.3 倍，此回合發動的技能愈多 (此技能發動後計算)，全隊攻擊力提升愈多，發動 2 個技能全隊攻擊力可達至最大 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/e/e0/1134i.png/revision/latest/scale-to-width-down/60?cb=20160505111305&path-prefix=zh"
-  },
-  {
-    monsterName: "渾天原始神卡俄斯",
-    monsterId: "1135",
-    leaderName: "歸元結念",
-    leaderDescription:
-      "全隊攻擊力 3.5 倍，龍類生命力 1.3 倍，魔族攻擊力 1.3 倍及妖精類回復力 1.3 倍；每個獸類成員延長移動符石時間 0.5 秒。當隊伍中有 4 種或以上種族成員時，所有屬性符石兼具 50% 其他屬性符石效果",
-    attribute: "暗",
-    race: "神族",
-    star: "7★",
-    monsterLink: "渾天原始神卡俄斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%B8%BE%E5%A4%A9%E5%8E%9F%E5%A7%8B%E7%A5%9E%E5%8D%A1%E4%BF%84%E6%96%AF",
-    activeName: ["無垠結界"],
-    activeDescription: [
-      "額外增加 3 行強化符石；15 秒內，可任意移動符石而不會發動消除"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/64/1135i.png/revision/latest/scale-to-width-down/60?cb=20160505040211&path-prefix=zh"
-  },
-  {
-    monsterName: "蓬托斯",
-    monsterId: "1136",
-    leaderName: "浪濤界限 ‧ 變革",
-    leaderDescription:
-      "3 粒或以上的水符石相連，即可發動消除，所有符石掉落機率不受其他技能影響 (包括改變掉落符石屬性的技能)",
-    attribute: "水",
-    race: "神族",
-    star: "5★",
-    monsterLink: "蓬托斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%93%AC%E6%89%98%E6%96%AF",
-    activeName: ["水之流"],
-    activeDescription: [
-      "1 回合內，水屬性攻擊力 1.5 倍，並隨機將 3 粒符石轉化為水符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/61/1136i.png/revision/latest/scale-to-width-down/60?cb=20160505040211&path-prefix=zh"
-  },
-  {
-    monsterName: "浪濤海神 ‧ 蓬托斯",
-    monsterId: "1137",
-    leaderName: "界限變革",
-    leaderDescription:
-      "3 粒或以上相同種類的符石相連，即可發動消除，所有符石掉落機率不受其他技能影響 (包括改變掉落符石屬性的技能)",
-    attribute: "水",
-    race: "神族",
-    star: "6★",
-    monsterLink: "浪濤海神 ‧ 蓬托斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%B5%AA%E6%BF%A4%E6%B5%B7%E7%A5%9E_%E2%80%A7_%E8%93%AC%E6%89%98%E6%96%AF",
-    activeName: ["隅角花海 ‧ 水"],
-    activeDescription: ["隨機將 2 個角落共 8 粒符石轉化為水符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/2/27/1137i.png/revision/latest/scale-to-width-down/60?cb=20160505040212&path-prefix=zh"
-  },
-  {
-    monsterName: "法那斯",
-    monsterId: "1138",
-    leaderName: "火之狂怒",
-    leaderDescription: "火屬性攻擊力 2.5 倍",
-    attribute: "火",
-    race: "神族",
-    star: "5★",
-    monsterLink: "法那斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%B3%95%E9%82%A3%E6%96%AF",
-    activeName: ["火之流"],
-    activeDescription: [
-      "1 回合內，火屬性攻擊力 1.5 倍，並隨機將 3 粒符石轉化為火符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/c/c2/1138i.png/revision/latest/scale-to-width-down/60?cb=20160505040212&path-prefix=zh"
-  },
-  {
-    monsterName: "熽焰火神 ‧ 法那斯",
-    monsterId: "1139",
-    leaderName: "熾燄萬鈞之怒",
-    leaderDescription: "火屬性攻擊力 4 倍",
-    attribute: "火",
-    race: "神族",
-    star: "6★",
-    monsterLink: "熽焰火神 ‧ 法那斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%86%BD%E7%84%B0%E7%81%AB%E7%A5%9E_%E2%80%A7_%E6%B3%95%E9%82%A3%E6%96%AF",
-    activeName: ["火影約章"],
-    activeDescription: [
-      "1 回合內，消除一組 5 粒或以上的火符石，火屬性攻擊力 1.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/9c/1139i.png/revision/latest/scale-to-width-down/60?cb=20160505040213&path-prefix=zh"
   },
   {
     monsterName: "黑幽狼",
@@ -9998,162 +9299,6 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/c/c2/1450i.png/revision/latest/scale-to-width-down/60?cb=20180707023923&path-prefix=zh"
   },
   {
-    monsterName: "修道騎士 ‧ 高文",
-    monsterId: "1451",
-    leaderName: "不撓雄傑 ‧ 木",
-    leaderDescription:
-      "木屬性攻擊力 2.5 倍；隊伍中的人類成員愈多時，木屬性成員的生命力及回復力愈高，5 個人類成員可達至最大 1.5 倍 (不計自身)",
-    attribute: "木",
-    race: "人類",
-    star: "6★",
-    monsterLink: "修道騎士 ‧ 高文",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E4%BF%AE%E9%81%93%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E9%AB%98%E6%96%87",
-    activeName: ["盛勢一瞬"],
-    activeDescription: ["1 回合內，隨機 3 個人類成員的攻擊力提升 3 倍"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/90/1451i.png/revision/latest/scale-to-width-down/60?cb=20180707023924&path-prefix=zh"
-  },
-  {
-    monsterName: "亞瑟",
-    monsterId: "1452",
-    leaderName: "聖劍",
-    leaderDescription:
-      "隊伍中只有光屬性人類時，全隊攻擊力 3 倍，所有符石兼具 15% 光符石效果",
-    attribute: "光",
-    race: "人類",
-    star: "5★",
-    monsterLink: "亞瑟",
-    "monsterLink-href": "https://tos.fandom.com/zh/wiki/%E4%BA%9E%E7%91%9F",
-    activeName: ["兵卒變心術 ‧ 暗殞"],
-    activeDescription: ["隨機將 3 粒暗符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/f1/1452i.png/revision/latest/scale-to-width-down/60?cb=20180707023924&path-prefix=zh"
-  },
-  {
-    monsterName: "高潔騎士 ‧ 亞瑟",
-    monsterId: "1453",
-    leaderName: "聖劍",
-    leaderDescription:
-      "隊伍中只有光屬性人類時，全隊攻擊力 3 倍，所有符石兼具 15% 光符石效果",
-    attribute: "光",
-    race: "人類",
-    star: "6★",
-    monsterLink: "高潔騎士 ‧ 亞瑟",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%AB%98%E6%BD%94%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E4%BA%9E%E7%91%9F",
-    activeName: ["王之劍"],
-    activeDescription: [
-      "1 回合內，消除水符石時，減少所受傷害 60%；消除火符石時，無視全體敵人的防禦力；消除木符石時，回復 15000 點生命力。同時消除水、火及木符石時，全隊攻擊力提升 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/7/7d/1453i.png/revision/latest/scale-to-width-down/60?cb=20180707023925&path-prefix=zh"
-  },
-  {
-    monsterName: "蘭斯洛特",
-    monsterId: "1454",
-    leaderName: "騎士之盟",
-    leaderDescription:
-      "隊伍中只有火、木及暗屬性成員時：全隊攻擊力 4 倍；消除心符石時，全隊攻擊力有 50% 機會額外提升 2 倍 (機率可以疊加)",
-    attribute: "暗",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "蘭斯洛特",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%98%AD%E6%96%AF%E6%B4%9B%E7%89%B9",
-    activeName: ["兵卒變心術 ‧ 光殞"],
-    activeDescription: ["隨機將 3 粒光符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/33/1454i.png/revision/latest/scale-to-width-down/60?cb=20180707023926&path-prefix=zh"
-  },
-  {
-    monsterName: "千刃騎士 ‧ 蘭斯洛特",
-    monsterId: "1455",
-    leaderName: "騎士之盟",
-    leaderDescription:
-      "隊伍中只有火、木及暗屬性成員時：全隊攻擊力 4 倍；消除心符石時，全隊攻擊力有 50% 機會額外提升 2 倍 (機率可以疊加)",
-    attribute: "暗",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "千刃騎士 ‧ 蘭斯洛特",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%8D%83%E5%88%83%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E8%98%AD%E6%96%AF%E6%B4%9B%E7%89%B9",
-    activeName: ["暗黑之劍氣", "銳劍出鞘"],
-    activeDescription: [
-      "水符石轉化為暗強化符石，下回合開始時，將本回合所消除強化符石的數量等值的符石轉化為暗強化符石 (水及光符石優先轉換)",
-      "每回合自身攻擊力持續提升，最大 4 倍，直至自身沒有發動攻擊"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/61/1455i.png/revision/latest/scale-to-width-down/60?cb=20180707023926&path-prefix=zh"
-  },
-  {
-    monsterName: "貝德維爾",
-    monsterId: "1456",
-    leaderName: "人類之怒",
-    leaderDescription: "人類攻擊力 2 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "貝德維爾",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%B2%9D%E5%BE%B7%E7%B6%AD%E7%88%BE",
-    activeName: ["兵卒變心術 ‧ 木殞"],
-    activeDescription: ["隨機將 3 粒木符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/12/1456i.png/revision/latest/scale-to-width-down/60?cb=20180707023927&path-prefix=zh"
-  },
-  {
-    monsterName: "雄炎騎士 ‧ 貝德維爾",
-    monsterId: "1457",
-    leaderName: "人類之嗔怒",
-    leaderDescription: "人類攻擊力 3 倍",
-    attribute: "火",
-    race: "人類",
-    star: "6★",
-    monsterLink: "雄炎騎士 ‧ 貝德維爾",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%9B%84%E7%82%8E%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E8%B2%9D%E5%BE%B7%E7%B6%AD%E7%88%BE",
-    activeName: ["忠義 ‧ 燄火"],
-    activeDescription: [
-      "火屬性攻擊力 2 倍，直至沒有消除 5 連擊 (Combo) 或以上的符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/1e/1457i.png/revision/latest/scale-to-width-down/60?cb=20180707023927&path-prefix=zh"
-  },
-  {
-    monsterName: "加雷斯",
-    monsterId: "1458",
-    leaderName: "人類之怒",
-    leaderDescription: "人類攻擊力 2 倍",
-    attribute: "木",
-    race: "人類",
-    star: "5★",
-    monsterLink: "加雷斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%8A%A0%E9%9B%B7%E6%96%AF",
-    activeName: ["兵卒變心術 ‧ 水殞"],
-    activeDescription: ["隨機將 3 粒水符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/a/ab/1458i.png/revision/latest/scale-to-width-down/60?cb=20180706103629&path-prefix=zh"
-  },
-  {
-    monsterName: "玩心騎士 ‧ 加雷斯",
-    monsterId: "1459",
-    leaderName: "騎士之盟",
-    leaderDescription:
-      "隊伍中只有火、木及暗屬性成員時：全隊攻擊力 4 倍；消除心符石時，全隊攻擊力有 50% 機會額外提升 2 倍 (機率可以疊加)",
-    attribute: "木",
-    race: "人類",
-    star: "6★",
-    monsterLink: "玩心騎士 ‧ 加雷斯",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%8E%A9%E5%BF%83%E9%A8%8E%E5%A3%AB_%E2%80%A7_%E5%8A%A0%E9%9B%B7%E6%96%AF",
-    activeName: ["隅角花海 ‧ 木"],
-    activeDescription: ["隨機將 2 個角落共 8 粒符石轉化為木符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/9a/1459i.png/revision/latest/scale-to-width-down/60?cb=20180706103556&path-prefix=zh"
-  },
-  {
     monsterName: "冰耀巨像",
     monsterId: "146",
     leaderName: "水之代價",
@@ -10168,187 +9313,6 @@ const monsters = [
     activeDescription: ["火符石轉化為水符石"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/d/df/146i.png/revision/latest/scale-to-width-down/60?cb=20140618172747&path-prefix=zh"
-  },
-  {
-    monsterName: "梅林",
-    monsterId: "1460",
-    leaderName: "暗黑回復魔法",
-    leaderDescription:
-      "妖精類攻擊力及回復力 4 倍。回合結束時，將心符石轉化為心強化符石",
-    attribute: "光",
-    race: "妖精類",
-    star: "5★",
-    monsterLink: "梅林",
-    "monsterLink-href": "https://tos.fandom.com/zh/wiki/%E6%A2%85%E6%9E%97",
-    activeName: ["兵卒變心術 ‧ 暗殞"],
-    activeDescription: ["隨機將 3 粒暗符石轉化為心符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/16/1460i.png/revision/latest/scale-to-width-down/60?cb=20180706102958&path-prefix=zh"
-  },
-  {
-    monsterName: "幻變術師 ‧ 梅林",
-    monsterId: "1461",
-    leaderName: "暗黑回復魔法",
-    leaderDescription:
-      "妖精類攻擊力及回復力 4 倍。回合結束時，將心符石轉化為心強化符石",
-    attribute: "光",
-    race: "妖精類",
-    star: "6★",
-    monsterLink: "幻變術師 ‧ 梅林",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%B9%BB%E8%AE%8A%E8%A1%93%E5%B8%AB_%E2%80%A7_%E6%A2%85%E6%9E%97",
-    activeName: ["治癒之賦 ‧ 化擊"],
-    activeDescription: [
-      "1 回合內，隊伍成員的屬性愈多，回復力愈高，最大 3.5 倍；當隊伍中所有成員的回復力基值相同時，所有成員追打一次暗屬性傷害，並將全隊對敵方造成傷害的 5% 轉化為生命力 (不計算主動及隊長技傷害)"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/f9/1461i.png/revision/latest/scale-to-width-down/60?cb=20180706103006&path-prefix=zh"
-  },
-  {
-    monsterName: "叛逆帝王 ‧ 莫德雷德",
-    monsterId: "1462",
-    leaderName: "浪濤怒嘯",
-    leaderDescription: "水屬性攻擊力 3.5 倍",
-    attribute: "水",
-    race: "人類",
-    star: "7★",
-    monsterLink: "叛逆帝王 ‧ 莫德雷德",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%8F%9B%E9%80%86%E5%B8%9D%E7%8E%8B_%E2%80%A7_%E8%8E%AB%E5%BE%B7%E9%9B%B7%E5%BE%B7",
-    activeName: ["傲浪之濤"],
-    activeDescription: [
-      "水符石轉化為人族符石；2 回合內，每回合扣除 30% 總生命力，水屬性攻擊力 2.25 倍，若技能發動時隊伍回復為 0 時，則不會每回合扣除生命力"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/85/1462i.png/revision/latest/scale-to-width-down/60?cb=20180707023928&path-prefix=zh"
-  },
-  {
-    monsterName: "暴欲狂獅 ‧ 蘭馬洛克",
-    monsterId: "1463",
-    leaderName: "火之怒嘯 ‧ 獵魔",
-    leaderDescription:
-      "火屬性攻擊力 3.5 倍，同時火屬性對魔族目標的攻擊力額外提升 2 倍",
-    attribute: "火",
-    race: "人類",
-    star: "6★",
-    monsterLink: "暴欲狂獅 ‧ 蘭馬洛克",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9A%B4%E6%AC%B2%E7%8B%82%E7%8D%85_%E2%80%A7_%E8%98%AD%E9%A6%AC%E6%B4%9B%E5%85%8B",
-    activeName: ["馴獅之志"],
-    activeDescription: [
-      "木符石轉化為火強化符石；並將 4 個角落共 4 粒符石轉化為火符石。若技能發動後 4 個角落均為火符石時，1 回合內，全隊攻擊力 1.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/e/e0/1463i.png/revision/latest/scale-to-width-down/60?cb=20180707023929&path-prefix=zh"
-  },
-  {
-    monsterName: "自由蒼蝶 ‧ 桂妮薇兒",
-    monsterId: "1464",
-    leaderName: "魔怒嘯天 ‧ 木",
-    leaderDescription: "木屬性魔族攻擊力 3.5 倍",
-    attribute: "木",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "自由蒼蝶 ‧ 桂妮薇兒",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%87%AA%E7%94%B1%E8%92%BC%E8%9D%B6_%E2%80%A7_%E6%A1%82%E5%A6%AE%E8%96%87%E5%85%92",
-    activeName: ["森化幻術"],
-    activeDescription: [
-      "1 回合內，所有符石兼具 50% 木符石效果。消除最底一橫行內的所有符石時，木屬性攻擊力 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/30/1464i.png/revision/latest/scale-to-width-down/60?cb=20180707023929&path-prefix=zh"
-  },
-  {
-    monsterName: "深淵魔女 ‧ 摩根勒菲",
-    monsterId: "1465",
-    leaderName: "莫逆相伴 ‧ 妖",
-    leaderDescription: "隊伍中的妖精類成員愈多，全隊攻擊力愈高，最大 3.5 倍",
-    attribute: "暗",
-    race: "妖精類",
-    star: "7★",
-    monsterLink: "深淵魔女 ‧ 摩根勒菲",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%B7%B1%E6%B7%B5%E9%AD%94%E5%A5%B3_%E2%80%A7_%E6%91%A9%E6%A0%B9%E5%8B%92%E8%8F%B2",
-    activeName: ["緩兵術"],
-    activeDescription: [
-      "延長所有敵人行動 1 回合。將技能冷卻中的成員 (不包括自己) 所在隊伍欄直行的符石轉化為心符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/c/ce/1465i.png/revision/latest/scale-to-width-down/60?cb=20180707023930&path-prefix=zh"
-  },
-  {
-    monsterName: "脫兔派對王 ‧ 君士坦丁",
-    monsterId: "1466",
-    leaderName: "燄影堅甲之術",
-    leaderDescription: "全隊攻擊力 1.5 倍，同時火屬性和暗屬性傷害減少 50%",
-    attribute: "光",
-    race: "人類",
-    star: "6★",
-    monsterLink: "脫兔派對王 ‧ 君士坦丁",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%84%AB%E5%85%94%E6%B4%BE%E5%B0%8D%E7%8E%8B_%E2%80%A7_%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81",
-    activeName: ["王之翼"],
-    activeDescription: [
-      "1 回合內，延長移動符石時間至 8 秒，若隊伍中只有人類成員時，全隊攻擊力 1.8 倍。只消除 3 粒光符石時 (只計算首批消除的符石)，移動符石後首批必定掉落 5 粒或以上的光符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/0/04/1466i.png/revision/latest/scale-to-width-down/60?cb=20180707023931&path-prefix=zh"
-  },
-  {
-    monsterName: "眩目之光 ‧ 亞弗戈蒙",
-    monsterId: "1467",
-    leaderName: "攻守化境",
-    leaderDescription:
-      "全隊攻擊力 4 倍，每首批消除 1 粒符石，回復總生命力等值的 0.5% 生命力 (效果可以疊加)",
-    attribute: "水",
-    race: "獸類",
-    star: "6★",
-    monsterLink: "眩目之光 ‧ 亞弗戈蒙",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%9C%A9%E7%9B%AE%E4%B9%8B%E5%85%89_%E2%80%A7_%E4%BA%9E%E5%BC%97%E6%88%88%E8%92%99",
-    activeName: ["化靈延敵"],
-    activeDescription: [
-      "當我方生命力 30% 或以下時，隨機將 20 粒符石轉化為心符石；反之，延遲全體敵人行動 1 回合"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/56/1467i.png/revision/latest/scale-to-width-down/60?cb=20180707023931&path-prefix=zh"
-  },
-  {
-    monsterName: "二刀武痴 ‧ 宮本武藏",
-    monsterId: "1468",
-    leaderName: "人類之狂怒",
-    leaderDescription: "人類攻擊力 2.5 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "二刀武痴 ‧ 宮本武藏",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E4%BA%8C%E5%88%80%E6%AD%A6%E7%97%B4_%E2%80%A7_%E5%AE%AE%E6%9C%AC%E6%AD%A6%E8%97%8F",
-    activeName: ["燄火刀流"],
-    activeDescription: [
-      "2 回合內，人類及龍類攻擊力 1.5 倍；火屬性人類及火屬性龍類攻擊力提升至 2.25 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/e/e8/1468i.png/revision/latest/scale-to-width-down/60?cb=20180707023932&path-prefix=zh"
-  },
-  {
-    monsterName: "無憂武士 ‧ 小次郎",
-    monsterId: "1469",
-    leaderName: "魔之狂怒",
-    leaderDescription: "魔族攻擊力 2.5 倍",
-    attribute: "木",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "無憂武士 ‧ 小次郎",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%84%A1%E6%86%82%E6%AD%A6%E5%A3%AB_%E2%80%A7_%E5%B0%8F%E6%AC%A1%E9%83%8E",
-    activeName: ["藤棘結界"],
-    activeDescription: [
-      "使受影響目標無法行動 5 回合，但效果會因我方發動攻擊而減少 1 回合 (每回合最多減少 1 回合效果持續時間)"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/81/1469i.png/revision/latest/scale-to-width-down/60?cb=20180707023933&path-prefix=zh"
   },
   {
     monsterName: "冰耀巨像 ‧ 解放",
@@ -10367,182 +9331,6 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/4/42/147i.png/revision/latest/scale-to-width-down/60?cb=20140618172802&path-prefix=zh"
   },
   {
-    monsterName: "藏真忍士 ‧ 服部半藏",
-    monsterId: "1470",
-    leaderName: "人類之狂怒",
-    leaderDescription: "人類攻擊力 2.5 倍",
-    attribute: "光",
-    race: "人類",
-    star: "5★",
-    monsterLink: "藏真忍士 ‧ 服部半藏",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%97%8F%E7%9C%9F%E5%BF%8D%E5%A3%AB_%E2%80%A7_%E6%9C%8D%E9%83%A8%E5%8D%8A%E8%97%8F",
-    activeName: ["電殛之屠"],
-    activeDescription: [
-      "1 回合內，自身攻擊力 2.5 倍。若身旁的成員同為光屬性或人類，同得此效果"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/54/1470i.png/revision/latest/scale-to-width-down/60?cb=20180707023933&path-prefix=zh"
-  },
-  {
-    monsterName: "淺井長政",
-    monsterId: "1471",
-    leaderName: "水之震怒",
-    leaderDescription: "水屬性攻擊力 3 倍",
-    attribute: "水",
-    race: "人類",
-    star: "5★",
-    monsterLink: "淺井長政",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%B7%BA%E4%BA%95%E9%95%B7%E6%94%BF",
-    activeName: ["流水追擊"],
-    activeDescription: ["1 回合內，個人追打水屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/1a/1471i.png/revision/latest/scale-to-width-down/60?cb=20180707023942&path-prefix=zh"
-  },
-  {
-    monsterName: "無求浪人 ‧ 淺井長政",
-    monsterId: "1472",
-    leaderName: "人之復甦 ‧ 凝水",
-    leaderDescription:
-      "水屬性攻擊力 3 倍及人類回復力 2 倍；受到攻擊時，場上每粒水符石可減少 5% 所受傷害，最多可減少 30% 傷害 (減傷效果不可疊加)",
-    attribute: "水",
-    race: "人類",
-    star: "6★",
-    monsterLink: "無求浪人 ‧ 淺井長政",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%84%A1%E6%B1%82%E6%B5%AA%E4%BA%BA_%E2%80%A7_%E6%B7%BA%E4%BA%95%E9%95%B7%E6%94%BF",
-    activeName: ["水月之濤"],
-    activeDescription: [
-      "2 回合內，水屬性攻擊力 1.5 倍，若首回合沒有受到攻擊，下回合水屬性攻擊力提升至 2.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/f9/1472i.png/revision/latest/scale-to-width-down/60?cb=20180707023943&path-prefix=zh"
-  },
-  {
-    monsterName: "織田信長",
-    monsterId: "1473",
-    leaderName: "燄刃襲",
-    leaderDescription:
-      "火屬性人類及火屬性龍類成員的攻擊力 4.5 倍，並延長移動符石時間 1 秒。消除 12 粒或以上火符石時，全隊攻擊力額外提升 1.5 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "織田信長",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%B9%94%E7%94%B0%E4%BF%A1%E9%95%B7",
-    activeName: ["流燄追擊"],
-    activeDescription: ["1 回合內，個人追打火屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/b/b1/1473i.png/revision/latest/scale-to-width-down/60?cb=20180707023944&path-prefix=zh"
-  },
-  {
-    monsterName: "烽火武心 ‧ 織田信長",
-    monsterId: "1474",
-    leaderName: "燄刃襲",
-    leaderDescription:
-      "火屬性人類及火屬性龍類成員的攻擊力 4.5 倍，並延長移動符石時間 1 秒。消除 12 粒或以上火符石時，全隊攻擊力額外提升 1.5 倍",
-    attribute: "火",
-    race: "人類",
-    star: "6★",
-    monsterLink: "烽火武心 ‧ 織田信長",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%83%BD%E7%81%AB%E6%AD%A6%E5%BF%83_%E2%80%A7_%E7%B9%94%E7%94%B0%E4%BF%A1%E9%95%B7",
-    activeName: ["森濤盡噬 ‧ 赤火"],
-    activeDescription: [
-      "1 回合內，全隊攻擊力 1.3 倍；將火符石轉化為火強化符石，並直接引爆場上所有水、木及心符石，以掉落火、光及暗強化符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/50/1474i.png/revision/latest/scale-to-width-down/60?cb=20180707023949&path-prefix=zh"
-  },
-  {
-    monsterName: "豐臣秀吉",
-    monsterId: "1475",
-    leaderName: "木葉之森",
-    leaderDescription:
-      "消除 6 粒木符石時，木屬性人類攻擊力 3.75 倍；消除的木符石數量愈多，攻擊力愈高，消除 15 粒木符石可達至最大 6 倍",
-    attribute: "木",
-    race: "人類",
-    star: "5★",
-    monsterLink: "豐臣秀吉",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%B1%90%E8%87%A3%E7%A7%80%E5%90%89",
-    activeName: ["流木追擊"],
-    activeDescription: ["1 回合內，個人追打木屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/ff/1475i.png/revision/latest/scale-to-width-down/60?cb=20180707023950&path-prefix=zh"
-  },
-  {
-    monsterName: "扇頁浮金 ‧ 豐臣秀吉",
-    monsterId: "1476",
-    leaderName: "木葉之森",
-    leaderDescription:
-      "消除 6 粒木符石時，木屬性人類攻擊力 3.75 倍；消除的木符石數量愈多，攻擊力愈高，消除 15 粒木符石可達至最大 6 倍",
-    attribute: "木",
-    race: "人類",
-    star: "6★",
-    monsterLink: "扇頁浮金 ‧ 豐臣秀吉",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%89%87%E9%A0%81%E6%B5%AE%E9%87%91_%E2%80%A7_%E8%B1%90%E8%87%A3%E7%A7%80%E5%90%89",
-    activeName: ["藤棘術"],
-    activeDescription: [
-      "隨機將 4 至 7 粒符石轉化為木強化符石 (光及暗符石優先轉換)"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/32/1476i.png/revision/latest/scale-to-width-down/60?cb=20180707023951&path-prefix=zh"
-  },
-  {
-    monsterName: "本多忠勝",
-    monsterId: "1477",
-    leaderName: "巨力之腕",
-    leaderDescription:
-      "隊伍中只有 2 種屬性成員時，全隊攻擊力 2.5 倍。若隊伍中有 4 個或以上人類成員，全隊攻擊力額外提升 2 倍",
-    attribute: "光",
-    race: "人類",
-    star: "5★",
-    monsterLink: "本多忠勝",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%9C%AC%E5%A4%9A%E5%BF%A0%E5%8B%9D",
-    activeName: ["流光追擊"],
-    activeDescription: ["1 回合內，個人追打光屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/2/29/1477i.png/revision/latest/scale-to-width-down/60?cb=20180707023951&path-prefix=zh"
-  },
-  {
-    monsterName: "豪拳斷罪 ‧ 本多忠勝",
-    monsterId: "1478",
-    leaderName: "巨力之腕",
-    leaderDescription:
-      "隊伍中只有 2 種屬性成員時，全隊攻擊力 2.5 倍。若隊伍中有 4 個或以上人類成員，全隊攻擊力額外提升 2 倍",
-    attribute: "光",
-    race: "人類",
-    star: "6★",
-    monsterLink: "豪拳斷罪 ‧ 本多忠勝",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%B1%AA%E6%8B%B3%E6%96%B7%E7%BD%AA_%E2%80%A7_%E6%9C%AC%E5%A4%9A%E5%BF%A0%E5%8B%9D",
-    activeName: ["百戰不摧"],
-    activeDescription: [
-      "1 回合內，將我方所受傷害直接轉化為我方生命力。若該回合敵人沒有發動攻擊，下回合全隊攻擊力 2 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/85/1478i.png/revision/latest/scale-to-width-down/60?cb=20180707023952&path-prefix=zh"
-  },
-  {
-    monsterName: "稻姬",
-    monsterId: "1479",
-    leaderName: "妖之靈力",
-    leaderDescription: "妖精類攻擊力及生命力 1.5 倍",
-    attribute: "暗",
-    race: "妖精類",
-    star: "5★",
-    monsterLink: "稻姬",
-    "monsterLink-href": "https://tos.fandom.com/zh/wiki/%E7%A8%BB%E5%A7%AC",
-    activeName: ["流影追擊"],
-    activeDescription: ["1 回合內，個人追打暗屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/13/1479i.png/revision/latest/scale-to-width-down/60?cb=20180707023953&path-prefix=zh"
-  },
-  {
     monsterName: "冰耀巨鱷",
     monsterId: "148",
     leaderName: "水之代價",
@@ -10557,178 +9345,6 @@ const monsters = [
     activeDescription: ["火符石轉化為水符石"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/6/66/148i.png/revision/latest/scale-to-width-down/60?cb=20140618172911&path-prefix=zh"
-  },
-  {
-    monsterName: "蓉花粉黛 ‧ 稻姬",
-    monsterId: "1480",
-    leaderName: "妖精萬鈞之怒 ‧ 靈泉",
-    leaderDescription: "妖精類攻擊力 4 倍及生命力 2 倍",
-    attribute: "暗",
-    race: "妖精類",
-    star: "6★",
-    monsterLink: "蓉花粉黛 ‧ 稻姬",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%93%89%E8%8A%B1%E7%B2%89%E9%BB%9B_%E2%80%A7_%E7%A8%BB%E5%A7%AC",
-    activeName: ["結界術 ‧ 靈"],
-    activeDescription: [
-      "1 回合內，每直行消除一組 4 粒或以上符石時 (只計算首批消除的符石)，該直行將產生 2 粒心符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/4b/1480i.png/revision/latest/scale-to-width-down/60?cb=20180707023954&path-prefix=zh"
-  },
-  {
-    monsterName: "阿市",
-    monsterId: "1481",
-    leaderName: "人之復甦 ‧ 凝水",
-    leaderDescription:
-      "水屬性攻擊力 3 倍及人類回復力 2 倍；受到攻擊時，場上每粒水符石可減少 5% 所受傷害，最多可減少 30% 傷害 (減傷效果不可疊加)",
-    attribute: "水",
-    race: "人類",
-    star: "5★",
-    monsterLink: "阿市",
-    "monsterLink-href": "https://tos.fandom.com/zh/wiki/%E9%98%BF%E5%B8%82",
-    activeName: ["流水追擊"],
-    activeDescription: ["1 回合內，個人追打水屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/d/d1/1481i.png/revision/latest/scale-to-width-down/60?cb=20180707023954&path-prefix=zh"
-  },
-  {
-    monsterName: "白化狂噬 ‧ 阿市",
-    monsterId: "1482",
-    leaderName: "人之復甦 ‧ 凝水",
-    leaderDescription:
-      "水屬性攻擊力 3 倍及人類回復力 2 倍；受到攻擊時，場上每粒水符石可減少 5% 所受傷害，最多可減少 30% 傷害 (減傷效果不可疊加)",
-    attribute: "水",
-    race: "人類",
-    star: "6★",
-    monsterLink: "白化狂噬 ‧ 阿市",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%99%BD%E5%8C%96%E7%8B%82%E5%99%AC_%E2%80%A7_%E9%98%BF%E5%B8%82",
-    activeName: ["啜血甦靈術"],
-    activeDescription: [
-      "回復累積戰鬥回合數 (需要消除符石) 倍化 2000 點等值的生命力，10 回合可回復最多 20000 點生命力。發動技能後將累積戰鬥回合數重置"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/15/1482i.png/revision/latest/scale-to-width-down/60?cb=20180707023955&path-prefix=zh"
-  },
-  {
-    monsterName: "濃姬",
-    monsterId: "1483",
-    leaderName: "火之震怒",
-    leaderDescription: "火屬性攻擊力 3 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "濃姬",
-    "monsterLink-href": "https://tos.fandom.com/zh/wiki/%E6%BF%83%E5%A7%AC",
-    activeName: ["流燄追擊"],
-    activeDescription: ["1 回合內，個人追打火屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/6a/1483i.png/revision/latest/scale-to-width-down/60?cb=20180707023956&path-prefix=zh"
-  },
-  {
-    monsterName: "華絲瀲灩 ‧ 濃姬",
-    monsterId: "1484",
-    leaderName: "人之復甦 ‧ 凝火",
-    leaderDescription:
-      "火屬性攻擊力 3 倍及人類回復力 2 倍；受到攻擊時，場上每粒火符石可減少 5% 所受傷害，最多可減少 30% 傷害 (減傷效果不可疊加)",
-    attribute: "火",
-    race: "人類",
-    star: "6★",
-    monsterLink: "華絲瀲灩 ‧ 濃姬",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%8F%AF%E7%B5%B2%E7%80%B2%E7%81%A9_%E2%80%A7_%E6%BF%83%E5%A7%AC",
-    activeName: ["森濤化燄"],
-    activeDescription: ["水符石及木符石轉化為火符石"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/a/a1/1484i.png/revision/latest/scale-to-width-down/60?cb=20180707023956&path-prefix=zh"
-  },
-  {
-    monsterName: "德川家康",
-    monsterId: "1485",
-    leaderName: "魔之狂怒 ‧ 光",
-    leaderDescription: "光屬性魔族攻擊力 2.5 倍",
-    attribute: "光",
-    race: "魔族",
-    star: "5★",
-    monsterLink: "德川家康",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%BE%B7%E5%B7%9D%E5%AE%B6%E5%BA%B7",
-    activeName: ["流光追擊"],
-    activeDescription: ["1 回合內，個人追打光屬性攻擊 3 次"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/7/73/1485i.png/revision/latest/scale-to-width-down/60?cb=20180707023957&path-prefix=zh"
-  },
-  {
-    monsterName: "雲詭機心 ‧ 德川家康",
-    monsterId: "1486",
-    leaderName: "天魔道 ‧ 光",
-    leaderDescription:
-      "光屬性攻擊力 2 倍，隊伍中每個魔族成員，扣除 5 %總生命力上限及增加光屬性攻擊力 0.5 倍，6 個魔族成員共扣除 30% 總生命力上限及可達至最高 5 倍光屬性攻擊力",
-    attribute: "光",
-    race: "魔族",
-    star: "6★",
-    monsterLink: "雲詭機心 ‧ 德川家康",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%9B%B2%E8%A9%AD%E6%A9%9F%E5%BF%83_%E2%80%A7_%E5%BE%B7%E5%B7%9D%E5%AE%B6%E5%BA%B7",
-    activeName: ["驚天之怒 ‧ 魔"],
-    activeDescription: ["1 回合內，魔族攻擊力 2.5 倍"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/90/1486i.png/revision/latest/scale-to-width-down/60?cb=20180707023958&path-prefix=zh"
-  },
-  {
-    monsterName: "五感響宴 ‧ 上杉謙信",
-    monsterId: "1487",
-    leaderName: "浪濤怒嘯",
-    leaderDescription: "水屬性攻擊力 3.5 倍",
-    attribute: "水",
-    race: "人類",
-    star: "6★",
-    monsterLink: "五感響宴 ‧ 上杉謙信",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E4%BA%94%E6%84%9F%E9%9F%BF%E5%AE%B4_%E2%80%A7_%E4%B8%8A%E6%9D%89%E8%AC%99%E4%BF%A1",
-    activeName: ["速勢之濤"],
-    activeDescription: [
-      "水符石轉化為水強化符石；1 回合內，可任意移動符石而不會發動消除"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/c/c4/1487i.png/revision/latest/scale-to-width-down/60?cb=20180707023959&path-prefix=zh"
-  },
-  {
-    monsterName: "忌心妒者 ‧ 明智光秀",
-    monsterId: "1488",
-    leaderName: "藤木怒嘯",
-    leaderDescription: "木屬性攻擊力 3.5 倍",
-    attribute: "木",
-    race: "人類",
-    star: "6★",
-    monsterLink: "忌心妒者 ‧ 明智光秀",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%BF%8C%E5%BF%83%E5%A6%92%E8%80%85_%E2%80%A7_%E6%98%8E%E6%99%BA%E5%85%89%E7%A7%80",
-    activeName: ["移魂進攻 ‧ 木"],
-    activeDescription: [
-      "將水符石轉化為木符石；所轉化的符石愈多，1 回合內全隊攻擊力愈高，轉化 4 粒水符石即可達至最大 1.8 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/9/90/1488i.png/revision/latest/scale-to-width-down/60?cb=20180707023959&path-prefix=zh"
-  },
-  {
-    monsterName: "戰慄追求者 ‧ 伊達政宗",
-    monsterId: "1489",
-    leaderName: "真龍之源",
-    leaderDescription: "暗屬性龍類攻擊力 4 倍及增加 180 點回復力",
-    attribute: "暗",
-    race: "龍類",
-    star: "7★",
-    monsterLink: "戰慄追求者 ‧ 伊達政宗",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E6%88%B0%E6%85%84%E8%BF%BD%E6%B1%82%E8%80%85_%E2%80%A7_%E4%BC%8A%E9%81%94%E6%94%BF%E5%AE%97",
-    activeName: ["龍魂共鳴 ‧ 暗流"],
-    activeDescription: [
-      "將 3 粒符石轉化為暗符石 (光符石優先)；1 回合內，以龍類其中造成的最大傷害轉換為全隊龍類的傷害"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/6/68/1489i.png/revision/latest/scale-to-width-down/60?cb=20180707024011&path-prefix=zh"
   },
   {
     monsterName: "烙紅巨像",
@@ -10748,186 +9364,6 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/6/6a/149i.png/revision/latest/scale-to-width-down/60?cb=20140618172919&path-prefix=zh"
   },
   {
-    monsterName: "跋扈狂獸 ‧ 武田信玄",
-    monsterId: "1490",
-    leaderName: "燄影世界 ‧ 獸",
-    leaderDescription:
-      "獸類攻擊力 2.5 倍；火符石兼具其他屬性符石效果，每個獸類成員提升 10% 效果，最高 50% (效果可以疊加)",
-    attribute: "火",
-    race: "獸類",
-    star: "6★",
-    monsterLink: "跋扈狂獸 ‧ 武田信玄",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E8%B7%8B%E6%89%88%E7%8B%82%E7%8D%B8_%E2%80%A7_%E6%AD%A6%E7%94%B0%E4%BF%A1%E7%8E%84",
-    activeName: ["風林火山"],
-    activeDescription: [
-      "1 回合內，全隊攻擊力 1.5 倍；隊伍成員的屬性愈多，延長移動符石時間愈長，最多延長 5 秒；若全隊均為獸類成員，1 回合內，連擊 (Combo) 數目增加 8"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/1/15/1490i.png/revision/latest/scale-to-width-down/60?cb=20180706101734&path-prefix=zh"
-  },
-  {
-    monsterName: "燈火宵行 ‧ 秀太",
-    monsterId: "1491",
-    leaderName: "流螢之約",
-    leaderDescription:
-      "心符石兼具 50% 水符石效果。隊伍中只有水屬性妖精時，全隊攻擊力 4.5 倍及生命力 1.3 倍",
-    attribute: "水",
-    race: "妖精類",
-    star: "6★",
-    monsterLink: "燈火宵行 ‧ 秀太",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%87%88%E7%81%AB%E5%AE%B5%E8%A1%8C_%E2%80%A7_%E7%A7%80%E5%A4%AA",
-    activeName: ["星落欄柵"],
-    activeDescription: [
-      "隨機將 3 個角落的符石轉化為 3 粒水符石、3 粒光符石及 3 粒心符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/b/b7/1491i.png/revision/latest/scale-to-width-down/60?cb=20180707024012&path-prefix=zh"
-  },
-  {
-    monsterName: "多情刀客 ‧ 真田幸村",
-    monsterId: "1492",
-    leaderName: "火之怒嘯 ‧ 獵魔",
-    leaderDescription:
-      "火屬性攻擊力 3.5 倍，同時火屬性對魔族目標的攻擊力額外提升 2 倍",
-    attribute: "火",
-    race: "人類",
-    star: "6★",
-    monsterLink: "多情刀客 ‧ 真田幸村",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%A4%9A%E6%83%85%E5%88%80%E5%AE%A2_%E2%80%A7_%E7%9C%9F%E7%94%B0%E5%B9%B8%E6%9D%91",
-    activeName: ["淨世之燄"],
-    activeDescription: [
-      "消除所有附加效果。2 回合內，受到攻擊時，隨機將火及心以外的一種符石轉化為火符石 (每回合最多可轉化一次)"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/87/1492i.png/revision/latest/scale-to-width-down/60?cb=20180707024012&path-prefix=zh"
-  },
-  {
-    monsterName: "震疫驅瘟 ‧ 瑞龍",
-    monsterId: "1493",
-    leaderName: "真龍之脈",
-    leaderDescription: "龍類攻擊力 2.5 倍及增加 200 點回復力",
-    attribute: "木",
-    race: "龍類",
-    star: "6★",
-    monsterLink: "震疫驅瘟 ‧ 瑞龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%9C%87%E7%96%AB%E9%A9%85%E7%98%9F_%E2%80%A7_%E7%91%9E%E9%BE%8D",
-    activeName: ["龍之煞勢"],
-    activeDescription: [
-      "龍類攻擊力 1.5 倍，效果持續至沒有消除 5 粒木符石或 5 粒暗符石"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/d/de/1493i.png/revision/latest/scale-to-width-down/60?cb=20180707024013&path-prefix=zh"
-  },
-  {
-    monsterName: "金蛋守護者",
-    monsterId: "1494",
-    leaderName: "兩儀",
-    leaderDescription: "所受傷害 30% (不包括敵技傷害) 轉化為我方生命力",
-    attribute: "光",
-    race: "進化素材",
-    star: "5★",
-    monsterLink: "金蛋守護者",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E9%87%91%E8%9B%8B%E5%AE%88%E8%AD%B7%E8%80%85",
-    activeName: ["超級治療"],
-    activeDescription: ["回復自身回復力 10 倍的生命力"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/f/fc/1494i.png/revision/latest/scale-to-width-down/60?cb=20180706103013&path-prefix=zh"
-  },
-  {
-    monsterName: "孤虎連舞 ‧ 井伊直虎",
-    monsterId: "1495",
-    leaderName: "人類之狂怒",
-    leaderDescription: "人類攻擊力 2.5 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "孤虎連舞 ‧ 井伊直虎",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%AD%A4%E8%99%8E%E9%80%A3%E8%88%9E_%E2%80%A7_%E4%BA%95%E4%BC%8A%E7%9B%B4%E8%99%8E",
-    activeName: ["雙刀連舞奧義 孤虎"],
-    activeDescription: [
-      "直接引爆場上所有木符石以掉落火符石。3 回合內，人類攻擊力 1.3 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/4/43/1495i.png/revision/latest/scale-to-width-down/60?cb=20180707024014&path-prefix=zh"
-  },
-  {
-    monsterName: "炎樂舞姬 ‧ 靜御前",
-    monsterId: "1496",
-    leaderName: "人類之狂怒",
-    leaderDescription: "人類攻擊力 2.5 倍",
-    attribute: "火",
-    race: "人類",
-    star: "5★",
-    monsterLink: "炎樂舞姬 ‧ 靜御前",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%82%8E%E6%A8%82%E8%88%9E%E5%A7%AC_%E2%80%A7_%E9%9D%9C%E5%BE%A1%E5%89%8D",
-    activeName: ["煌炎之神樂"],
-    activeDescription: [
-      "直接引爆場上所有火屬性以外 2 粒或以上相連的符石，以掉落強化符石。2 回合內，火屬性回復力 1.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/81/1496i.png/revision/latest/scale-to-width-down/60?cb=20180707024015&path-prefix=zh"
-  },
-  {
-    monsterName: "夜櫻紛飛之嵐 ‧ 黃泉",
-    monsterId: "1497",
-    leaderName: "冥神萬鈞之怒 ‧ 強",
-    leaderDescription: "暗屬性神族攻擊力 4.5 倍",
-    attribute: "暗",
-    race: "神族",
-    star: "6★",
-    monsterLink: "夜櫻紛飛之嵐 ‧ 黃泉",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%A4%9C%E6%AB%BB%E7%B4%9B%E9%A3%9B%E4%B9%8B%E5%B5%90_%E2%80%A7_%E9%BB%83%E6%B3%89",
-    activeName: ["櫻花鬼神亂舞"],
-    activeDescription: [
-      "直接引爆場上所有符石並掉落強化符石。2 回合內，神族攻擊力 1.5 倍"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/3b/1497i.png/revision/latest/scale-to-width-down/60?cb=20180707024015&path-prefix=zh"
-  },
-  {
-    monsterName: "百川海中主 ‧ 蛟龍",
-    monsterId: "1498",
-    leaderName: "浪濤怒嘯",
-    leaderDescription: "水屬性攻擊力 3.5 倍",
-    attribute: "水",
-    race: "龍類",
-    star: "6★",
-    monsterLink: "百川海中主 ‧ 蛟龍",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%99%BE%E5%B7%9D%E6%B5%B7%E4%B8%AD%E4%B8%BB_%E2%80%A7_%E8%9B%9F%E9%BE%8D",
-    activeName: ["霸蛟龍的逆鱗"],
-    activeDescription: ["光符石轉化為水強化符石。2 回合內，減少所受傷害 65%"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/3/31/1498i.png/revision/latest/scale-to-width-down/60?cb=20180707024016&path-prefix=zh"
-  },
-  {
-    monsterName: "冥縱之凶獅 ‧ 基加美修",
-    monsterId: "1499",
-    leaderName: "連鎖聖令 ‧ 火",
-    leaderDescription:
-      "火屬性攻擊力 3.5 倍。消除一組 12 粒或以上的符石時，火屬性攻擊力額外提升 1.5 倍",
-    attribute: "火",
-    race: "神族",
-    star: "6★",
-    monsterLink: "冥縱之凶獅 ‧ 基加美修",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E5%86%A5%E7%B8%B1%E4%B9%8B%E5%87%B6%E7%8D%85_%E2%80%A7_%E5%9F%BA%E5%8A%A0%E7%BE%8E%E4%BF%AE",
-    activeName: ["凶性死棋"],
-    activeDescription: [
-      "引爆火屬性以外數量最多的一種屬性符石，以掉落火強化符石，於移動並消除符石後，引爆該屬性符石，直至場上沒有該種符石 (同一回合內只可發動一次)"
-    ],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/5/5f/1499i.png/revision/latest/scale-to-width-down/60?cb=20180707024017&path-prefix=zh"
-  },
-  {
     monsterName: "烙紅巨像 ‧ 解放",
     monsterId: "150",
     leaderName: "灼熱境界",
@@ -10943,22 +9379,6 @@ const monsters = [
     activeDescription: ["木符石轉化為火符石"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/c/c7/150i.png/revision/latest/scale-to-width-down/60?cb=20140618173107&path-prefix=zh"
-  },
-  {
-    monsterName: "神魔小妹",
-    monsterId: "1500",
-    leaderName: "沒有技能",
-    leaderDescription: "沒有技能",
-    attribute: "水",
-    race: "人類",
-    star: "7★",
-    monsterLink: "神魔小妹",
-    "monsterLink-href":
-      "https://tos.fandom.com/zh/wiki/%E7%A5%9E%E9%AD%94%E5%B0%8F%E5%A6%B9",
-    activeName: ["小妹亂撞"],
-    activeDescription: ["所有符石隨機轉換"],
-    thumbnail:
-      "https://vignette.wikia.nocookie.net/tos/images/8/80/1500i.png/revision/latest/scale-to-width-down/60?cb=20180706082107&path-prefix=zh"
   },
   {
     monsterName: "書生布偶",
@@ -20382,7 +18802,7 @@ const monsters = [
     activeName: ["藤棘同化術 ‧ 加冕", "藤木療法 ‧ 強"],
     activeDescription: [
       "隨機將 4 至 6 粒符石轉化為木強化符石 (水符石優先轉換)，發動技能時若我方生命力全滿，則轉化為木人族強化符石",
-      "心符石轉化為木人族強化符石，每轉化 1 粒符石將提升自身攻擊力 1 倍及回復 10% 生命力，最多可提升至 8 倍及回復 100% 生命力"
+      "心符石轉化為木人族強化符石，每轉化 1 粒符石將提升自身攻擊力 1 倍及回復 10% 生命力，最多可提升至 8 倍及回復至 100% 生命力"
     ],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/6/68/2046i.png/revision/latest/scale-to-width-down/60?cb=20190404101001&path-prefix=zh"
@@ -20978,6 +19398,186 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/d/d2/210i.png/revision/latest/scale-to-width-down/60?cb=20140618181616&path-prefix=zh"
   },
   {
+    monsterName: "天鵝座 ‧ 冰河",
+    monsterId: "2101",
+    leaderName: "絕對零度 ‧ 冰",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 連擊 (Combo) 數目愈多，全隊攻擊力提升愈多，3 連擊 (Combo) 提升 4 倍，6 連擊 (Combo) 可提升至最大 5.5 倍\nII. 心符石兼具 50% 水符石效果\nIII. 「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力及回復力額外提升 1.2 倍",
+    attribute: "水",
+    race: "人類",
+    star: "6★",
+    monsterLink: "天鵝座 ‧ 冰河",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%A4%A9%E9%B5%9D%E5%BA%A7_%E2%80%A7_%E5%86%B0%E6%B2%B3",
+    activeName: ["鑽石星塵", "水瓶座黃金聖衣"],
+    activeDescription: [
+      "I. 將 8 個固定位置的符石轉化為水人族符石\nII. 1 回合內，以 50% 自身攻擊力追打水屬性攻擊 10 次",
+      "需裝備「水瓶座黃金聖衣」龍刻武裝才可發動此技能：\nI. 變身\nII. 1 回合內，可任意移動符石而不會發動消除"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/b/bc/2101i.png/revision/latest/scale-to-width-down/60?cb=20190506035056&path-prefix=zh"
+  },
+  {
+    monsterName: "黃金水瓶座 ‧ 冰河",
+    monsterId: "2102",
+    leaderName: "絕對零度 ‧ 煉冰",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 連擊 (Combo) 數目愈多，全隊攻擊力提升愈多，3 連擊 (Combo) 提升 4 倍，8 連擊 (Combo) 可提升至最大 6.5 倍\nII. 心符石兼具 50% 水符石效果\nIII. 「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力及回復力額外提升 1.2 倍",
+    attribute: "水",
+    race: "人類",
+    star: "6★",
+    monsterLink: "黃金水瓶座 ‧ 冰河",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%BB%83%E9%87%91%E6%B0%B4%E7%93%B6%E5%BA%A7_%E2%80%A7_%E5%86%B0%E6%B2%B3",
+    activeName: ["金光火燄旋風拳", "曙光女神之寬恕"],
+    activeDescription: [
+      "I. 將 12 個固定位置的符石分別轉化為 6 粒水人族符石及 6 粒火人族符石\nII. 1 回合內，個人追打水及火屬性攻擊各 5 次",
+      "I. 將場上的符石變回原始模樣，隨機將符石轉化為凍結符石 (3 回合內不能消除該符石)，直至場上有 7 粒凍結符石為止\nII. 將其他符石轉化為水人族符石\nIII. 消除符石後，將凍結符石變回原始模樣\nIV. 1 回合內，凍結敵方全體，使受影響目標無法行動並轉為水屬性"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/0/0c/2102i.png/revision/latest/scale-to-width-down/60?cb=20190506035157&path-prefix=zh"
+  },
+  {
+    monsterName: "鳳凰座 ‧ 一輝",
+    monsterId: "2103",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "火",
+    race: "人類",
+    star: "6★",
+    monsterLink: "鳳凰座 ‧ 一輝",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%B3%B3%E5%87%B0%E5%BA%A7_%E2%80%A7_%E4%B8%80%E8%BC%9D",
+    activeName: ["鳳凰幻魔拳", "獅子座黃金聖衣"],
+    activeDescription: [
+      "I. 引爆最底 1 橫行的符石以掉落強化符石\nII. 1 回合內，減少 50% 所受傷害",
+      "需裝備「獅子座黃金聖衣」龍刻武裝才可發動此技能：\nI. 變身\nII. 所有「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 所在直行的符石轉化為人族強化符石"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/8/8e/2103i.png/revision/latest/scale-to-width-down/60?cb=20190506035226&path-prefix=zh"
+  },
+  {
+    monsterName: "黃金獅子座 ‧ 一輝",
+    monsterId: "2104",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "火",
+    race: "人類",
+    star: "6★",
+    monsterLink: "黃金獅子座 ‧ 一輝",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%BB%83%E9%87%91%E7%8D%85%E5%AD%90%E5%BA%A7_%E2%80%A7_%E4%B8%80%E8%BC%9D",
+    activeName: ["鳳凰幻魔拳 ‧ 強", "鳳翼天翔"],
+    activeDescription: [
+      "I. 引爆下方 3 橫行的符石以掉落強化符石\nII. 1 回合內，減少 50% 所受傷害",
+      "I. 1 回合內，觸碰被燃燒的位置所受的傷害減至 0 (不包括煉獄之火所造成的傷害)\nII. 每首批消除 1 種符石，必定掉落 5 粒火強化符石，首批消除 6 種可掉落最多 30 粒火強化符石"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/c/cf/2104i.png/revision/latest/scale-to-width-down/60?cb=20190506035249&path-prefix=zh"
+  },
+  {
+    monsterName: "天龍座 ‧ 紫龍",
+    monsterId: "2105",
+    leaderName: "天龍之鱗",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 以左下角的符石開始轉珠時，全隊攻擊力及回復力額外提升 1.5 倍\nIII. 以右下角的符石開始轉珠時，移動符石時觸碰的首 3 粒符石轉化為木強化符石\nIV. 「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力及回復力額外提升 1.2 倍",
+    attribute: "木",
+    race: "人類",
+    star: "6★",
+    monsterLink: "天龍座 ‧ 紫龍",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%A4%A9%E9%BE%8D%E5%BA%A7_%E2%80%A7_%E7%B4%AB%E9%BE%8D",
+    activeName: ["廬山昇龍霸", "天秤座黃金聖衣"],
+    activeDescription: [
+      "I. 引爆場上所有符石，以在自身直行掉落木符石，其他直行的符石則隨機掉落\nII. 1 回合內，自身攻擊力 7 倍，但受到的傷害提升 1.5 倍",
+      "需裝備「天秤座黃金聖衣」龍刻武裝才可發動此技能：\nI. 變身\nII. 完全回復生命力\nIII. 1 回合內，木符石兼具其他屬性符石效果"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/e/ec/2105i.png/revision/latest/scale-to-width-down/60?cb=20190506035311&path-prefix=zh"
+  },
+  {
+    monsterName: "黃金天秤座 ‧ 紫龍",
+    monsterId: "2106",
+    leaderName: "天龍之鱗 ‧ 強",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 以左下角的符石開始轉珠時，全隊攻擊力及回復力額外提升 1.8 倍\nIII. 以右下角的符石開始轉珠時，移動符石時觸碰的首 3 粒符石轉化為木人族強化符石\nIV. 「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力及回復力額外提升 1.2 倍",
+    attribute: "木",
+    race: "人類",
+    star: "6★",
+    monsterLink: "黃金天秤座 ‧ 紫龍",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%BB%83%E9%87%91%E5%A4%A9%E7%A7%A4%E5%BA%A7_%E2%80%A7_%E7%B4%AB%E9%BE%8D",
+    activeName: ["廬山龍飛翔", "廬山百龍霸"],
+    activeDescription: [
+      "I. 引爆場上所有符石，以在自身直行掉落木人族符石，其他直行的符石則隨機掉落\nII. 1 回合內，自身攻擊力 7 倍",
+      "I. 將所有符石轉化為固定數量的木強化及心強化符石\nII. 1 回合內，首批掉落的 30 粒符石必定為木及心符石"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/e/ea/2106i.png/revision/latest/scale-to-width-down/60?cb=20190506035343&path-prefix=zh"
+  },
+  {
+    monsterName: "天馬座 ‧ 星矢",
+    monsterId: "2107",
+    leaderName: "凝聚 ‧ 聖鬥士的力量",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 延長移動符石時間 2 秒\nII. 消除 1 組符石的數目愈多，全隊攻擊力提升愈多，消除 1 組 3 粒符石攻擊力可提升 5.5 倍，消除 1 組 12 粒符石可提升至最大 10 倍\nIII. 隊伍中所有「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力、回復力額外提升 1.2 倍",
+    attribute: "光",
+    race: "人類",
+    star: "6★",
+    monsterLink: "天馬座 ‧ 星矢",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%A4%A9%E9%A6%AC%E5%BA%A7_%E2%80%A7_%E6%98%9F%E7%9F%A2",
+    activeName: ["天馬流星拳", "射手座黃金聖衣"],
+    activeDescription: [
+      "I. 將 12 個固定位置的符石轉化為光強化符石\nII. 1 回合內，以 30% 自身攻擊力追打光屬性攻擊 12 次",
+      "需裝備「射手座黃金聖衣」龍刻武裝才可發動此技能：\nI. 變身\nII. 引爆所有「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 所在直行的符石，以掉落該直行成員屬性的符石"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/6/61/2107i.png/revision/latest/scale-to-width-down/60?cb=20190506035503&path-prefix=zh"
+  },
+  {
+    monsterName: "黃金射手座 ‧ 星矢",
+    monsterId: "2108",
+    leaderName: "凝聚 ‧ 聖鬥士的力量",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 延長移動符石時間 2 秒\nII. 消除 1 組符石的數目愈多，全隊攻擊力提升愈多，消除 1 組 3 粒符石攻擊力可提升 5.5 倍，消除 1 組 12 粒符石可提升至最大 10 倍\nIII. 隊伍中所有「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 的生命力、攻擊力、回復力額外提升 1.2 倍",
+    attribute: "光",
+    race: "人類",
+    star: "6★",
+    monsterLink: "黃金射手座 ‧ 星矢",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%BB%83%E9%87%91%E5%B0%84%E6%89%8B%E5%BA%A7_%E2%80%A7_%E6%98%9F%E7%9F%A2",
+    activeName: ["天馬彗星拳", "射手座之箭"],
+    activeDescription: [
+      "I. 分別將 12 個及 18 個固定位置的符石轉化為光人族強化符石及心強化符石\nII. 1 回合內，個人追打自身擊力 3 倍的光屬性攻擊 1 次",
+      "1 回合內\nI. 延長移動符石時間至 12 秒\nII. 自身攻擊力 12 倍，其他成員不能發動攻擊，此傷害無視防禦力及「指定形狀盾」敵技"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/c/c6/2108i.png/revision/latest/scale-to-width-down/60?cb=20190506035506&path-prefix=zh"
+  },
+  {
+    monsterName: "仙女座 ‧ 瞬",
+    monsterId: "2109",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "暗",
+    race: "人類",
+    star: "6★",
+    monsterLink: "仙女座 ‧ 瞬",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E4%BB%99%E5%A5%B3%E5%BA%A7_%E2%80%A7_%E7%9E%AC",
+    activeName: ["星雲鎖鏈", "處女座黃金聖衣"],
+    activeDescription: [
+      "1 回合內：\nI. 自身攻擊力 3 倍\nII. 將移動符石時觸碰的首 10 粒符石轉化為強化符石",
+      "需裝備「處女座黃金聖衣」龍刻武裝才可發動此技能：\nI. 變身\nII. 1 回合內，自身攻擊力及回復力 4 倍"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/4/4c/2109i.png/revision/latest/scale-to-width-down/60?cb=20190506035511&path-prefix=zh"
+  },
+  {
     monsterName: "泰芙努特",
     monsterId: "211",
     leaderName: "水之制裁",
@@ -20994,6 +19594,118 @@ const monsters = [
       "https://vignette.wikia.nocookie.net/tos/images/3/35/211i.png/revision/latest/scale-to-width-down/60?cb=20140618181622&path-prefix=zh"
   },
   {
+    monsterName: "黃金處女座 ‧ 瞬",
+    monsterId: "2110",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "暗",
+    race: "人類",
+    star: "6★",
+    monsterLink: "黃金處女座 ‧ 瞬",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%BB%83%E9%87%91%E8%99%95%E5%A5%B3%E5%BA%A7_%E2%80%A7_%E7%9E%AC",
+    activeName: ["星雲旋風", "星雲風暴"],
+    activeDescription: [
+      "I. 場上外側 18 粒的符石轉化為強化符石\nII. 1 回合內，全隊攻擊力 2 倍",
+      "I. 場上外側 18 粒的符石轉化為暗符石，並將其他符石轉化為水、火、木、光符石各 3 粒\nII. 回合結束時，對敵方全體造成 100 萬暗屬性傷害 (需消除符石)"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/5/5b/2110i.png/revision/latest/scale-to-width-down/60?cb=20190506035515&path-prefix=zh"
+  },
+  {
+    monsterName: "水瓶座 ‧ 卡妙",
+    monsterId: "2111",
+    leaderName: "聖鬥士之志",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 4 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，全隊攻擊力及回復力額外提升 1.5 倍",
+    attribute: "水",
+    race: "人類",
+    star: "6★",
+    monsterLink: "水瓶座 ‧ 卡妙",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E6%B0%B4%E7%93%B6%E5%BA%A7_%E2%80%A7_%E5%8D%A1%E5%A6%99",
+    activeName: ["曙光女神之寬恕 (卡妙)"],
+    activeDescription: [
+      "曙光女神之寬恕 (卡妙)\nI. 將第 3 及 第 4 直行的符石轉化為水強化符石\nII. 1 回合內，凍結敵方全體，使受影響目標無法行動並轉為水屬性"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/c/c2/2111i.png/revision/latest/scale-to-width-down/60?cb=20190505133836&path-prefix=zh"
+  },
+  {
+    monsterName: "摩羯座 ‧ 修羅",
+    monsterId: "2112",
+    leaderName: "聖鬥士之志",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 4 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，全隊攻擊力及回復力額外提升 1.5 倍",
+    attribute: "木",
+    race: "人類",
+    star: "6★",
+    monsterLink: "摩羯座 ‧ 修羅",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E6%91%A9%E7%BE%AF%E5%BA%A7_%E2%80%A7_%E4%BF%AE%E7%BE%85",
+    activeName: ["聖劍"],
+    activeDescription: [
+      "I. 將木符石轉化為木人族強化符石\nII. 1 回合內，自身、「天龍座 ‧ 紫龍」及「黃金天秤座 ‧ 紫龍」的攻擊力 3 倍，其攻擊無視敵人的防禦力"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/1/19/2112i.png/revision/latest/scale-to-width-down/60?cb=20190505133746&path-prefix=zh"
+  },
+  {
+    monsterName: "獅子座 ‧ 艾奧里亞",
+    monsterId: "2113",
+    leaderName: "聖鬥士之志",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 4 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，全隊攻擊力及回復力額外提升 1.5 倍",
+    attribute: "光",
+    race: "人類",
+    star: "6★",
+    monsterLink: "獅子座 ‧ 艾奧里亞",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E7%8D%85%E5%AD%90%E5%BA%A7_%E2%80%A7_%E8%89%BE%E5%A5%A7%E9%87%8C%E4%BA%9E",
+    activeName: ["閃電光速拳"],
+    activeDescription: [
+      "I. 將心符石轉化為火強化符石\nII. 將暗符石轉化為光強化符石\nIII. 1 回合內，連擊 (Combo) 數目增加 7"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/5/56/2113i.png/revision/latest/scale-to-width-down/60?cb=20190505133856&path-prefix=zh"
+  },
+  {
+    monsterName: "雅典娜 ‧ 城戶沙織",
+    monsterId: "2116",
+    leaderName: "沒有技能",
+    leaderDescription: "沒有技能",
+    attribute: "光",
+    race: "人類",
+    star: "6★",
+    monsterLink: "雅典娜 ‧ 城戶沙織",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E9%9B%85%E5%85%B8%E5%A8%9C_%E2%80%A7_%E5%9F%8E%E6%88%B6%E6%B2%99%E7%B9%94",
+    activeName: ["沒有技能"],
+    activeDescription: ["沒有技能"],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/e/ef/2116i.png/revision/latest/scale-to-width-down/60?cb=20190506035839&path-prefix=zh"
+  },
+  {
+    monsterName: "巨蟹座 ‧ 迪斯馬斯古",
+    monsterId: "2117",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "暗",
+    race: "人類",
+    star: "6★",
+    monsterLink: "巨蟹座 ‧ 迪斯馬斯古",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%B7%A8%E8%9F%B9%E5%BA%A7_%E2%80%A7_%E8%BF%AA%E6%96%AF%E9%A6%AC%E6%96%AF%E5%8F%A4",
+    activeName: ["積屍氣冥界波"],
+    activeDescription: [
+      "I. 將 10 個固定位置的符石轉化為暗強化符石\nII. 1 回合內，自身攻擊力 4 倍；若敵人身上有附加效果時，自身攻擊力提升至 8 倍"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/2/2f/2117i.png/revision/latest/scale-to-width-down/60?cb=20190506034730&path-prefix=zh"
+  },
+  {
     monsterName: "雨神泰芙努特",
     monsterId: "212",
     leaderName: "水之審判",
@@ -21008,6 +19720,79 @@ const monsters = [
     activeDescription: ["直接引爆水屬性以外的符石造成敵方全體水屬性傷害"],
     thumbnail:
       "https://vignette.wikia.nocookie.net/tos/images/e/ec/212i.png/revision/latest/scale-to-width-down/60?cb=20140618181626&path-prefix=zh"
+  },
+  {
+    monsterName: "白羊座 ‧ 穆",
+    monsterId: "2123",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "光",
+    race: "人類",
+    star: "7★",
+    monsterLink: "白羊座 ‧ 穆",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E7%99%BD%E7%BE%8A%E5%BA%A7_%E2%80%A7_%E7%A9%86",
+    activeName: ["星光滅絕"],
+    activeDescription: [
+      "1 回合內\nI. 自身生命力愈高，全隊攻擊力愈高，最大 2.2 倍\nII. 人類成員追打光屬性攻擊 1 次"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/7/77/2123i.png/revision/latest/scale-to-width-down/60?cb=20190505133920&path-prefix=zh"
+  },
+  {
+    monsterName: "射手座 ‧ 艾奧羅斯",
+    monsterId: "2125",
+    leaderName: "聖鬥士之心",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 5 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，心符石兼具 50% 所有屬性符石效果 (可疊加)",
+    attribute: "光",
+    race: "人類",
+    star: "6★",
+    monsterLink: "射手座 ‧ 艾奧羅斯",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%B0%84%E6%89%8B%E5%BA%A7_%E2%80%A7_%E8%89%BE%E5%A5%A7%E7%BE%85%E6%96%AF",
+    activeName: ["原子力雷神光速拳"],
+    activeDescription: [
+      "I. 1 回合內，個人以 50% 自身攻擊力追打光屬性攻擊 10 次\nII. 若擊斃本層 (Wave) 所有敵人，自身主動技能 CD 減少 3"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/5/57/2125i.png/revision/latest/scale-to-width-down/60?cb=20190505133931&path-prefix=zh"
+  },
+  {
+    monsterName: "天鷹座 ‧ 魔鈴",
+    monsterId: "2126",
+    leaderName: "聖鬥士之志",
+    leaderDescription:
+      "隊伍中只有人類成員時：\nI. 全隊攻擊力 4 倍\nII. 隊伍中有 3 個或以上「聖鬥士星矢」合作角色 (不包括「雅典娜 ‧ 城戶沙織」) 時，全隊攻擊力及回復力額外提升 1.5 倍",
+    attribute: "水",
+    race: "人類",
+    star: "6★",
+    monsterLink: "天鷹座 ‧ 魔鈴",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E5%A4%A9%E9%B7%B9%E5%BA%A7_%E2%80%A7_%E9%AD%94%E9%88%B4",
+    activeName: ["流星拳"],
+    activeDescription: [
+      "1 回合內，自身、「天馬座 ‧ 星矢」及「黃金射手座 ‧ 星矢」以 30% 攻擊力追打水屬性攻擊 10 次"
+    ],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/4/45/2126i.png/revision/latest/scale-to-width-down/60?cb=20190508065906&path-prefix=zh"
+  },
+  {
+    monsterName: "聖域神鹿",
+    monsterId: "2128",
+    leaderName: "沒有技能",
+    leaderDescription: "沒有技能",
+    attribute: "光",
+    race: "強化素材",
+    star: "4★",
+    monsterLink: "聖域神鹿",
+    "monsterLink-href":
+      "https://tos.fandom.com/zh/wiki/%E8%81%96%E5%9F%9F%E7%A5%9E%E9%B9%BF",
+    activeName: ["沒有技能"],
+    activeDescription: ["沒有技能"],
+    thumbnail:
+      "https://vignette.wikia.nocookie.net/tos/images/6/66/2128i.png/revision/latest/scale-to-width-down/60?cb=20190507103718&path-prefix=zh"
   },
   {
     monsterName: "賽特",

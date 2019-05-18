@@ -100,6 +100,7 @@ function SectionList(props) {
           <PaginationLink last onClick={() => setPage(totalPages)} />
         </PaginationItem>
       </Pagination>
+      <p className="text-center">最後更新時間：2019-4-18 16:16:17</p>
     </>
   );
 }
