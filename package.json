@@ -12,6 +12,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-highlight-words": "^0.16.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "2.1.8",
     "react-select": "^2.4.3",
     "reactstrap": "^8.0.0"
@@ -19,6 +20,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^2.2.0",
+    "lint-staged": "^8.2.1",
     "precise-commits": "^1.0.2",
     "prettier": "^1.17.0"
   },
@@ -42,7 +44,15 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "precise-commits"
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,jsx,css,scss}": [
+        "prettier --write",
+        "git add"
+      ]
     }
   },
   "config": {
