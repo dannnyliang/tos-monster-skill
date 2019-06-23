@@ -4,7 +4,7 @@ import prop from "lodash/fp/prop";
 
 import useSelectOptions from "./useSelectOptions";
 import useSelectedValues from "./useSelectedValues";
-import { TagContext, UserContext } from "../../App";
+import { TagContext, UserContext } from "../../AppRouter";
 
 function MonsterTags(props) {
   const { monsterId } = props;

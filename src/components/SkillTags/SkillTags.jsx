@@ -9,7 +9,7 @@ import {
 import prop from "lodash/fp/prop";
 
 import TagBadge from "../TagBadge";
-import { TagContext, UserContext } from "../../App";
+import { TagContext, UserContext } from "../../AppRouter";
 
 function SkillTags(props) {
   const { setFilters } = props;

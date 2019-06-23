@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { database } from "firebase";
 import isNil from "lodash/isNil";
-import isEmpty from "lodash/isEmpty";
 
-const useAuth = setIsModalOpen => {
+const useAuth = ({ lsUser }) => {
+  const [user, setUser] = useState(lsUser);
+
   const getUsers = () => {
     return new Promise((resolve, reject) => {
       database()
@@ -11,27 +13,24 @@ const useAuth = setIsModalOpen => {
     });
   };
 
-  const getCurrentUser = () => {
-    const lsUser = localStorage.getItem("user");
-    if (isEmpty(lsUser)) return undefined;
-    return JSON.parse(lsUser);
-  };
-
   const uidAuth = uid => {
     database()
       .ref(`users/${uid}`)
       .once("value", snapShot => {
-        const user = snapShot.val();
-        if (isNil(user)) {
+        const userLogin = snapShot.val();
+        if (isNil(userLogin)) {
           registered(uid);
           return;
         }
-        login(user);
+        login(userLogin);
       });
   };
 
-  const login = user => {
-    localStorage.setItem("user", JSON.stringify(user));
+  const login = userLogin => {
+    if (userLogin !== user) {
+      setUser(userLogin);
+    }
+    localStorage.setItem("user", JSON.stringify(userLogin));
   };
 
   const logout = () => {
@@ -43,12 +42,11 @@ const useAuth = setIsModalOpen => {
       .ref(`users/${uid}`)
       .set({ uid, role: "user" }, () => {
         localStorage.setItem("user", JSON.stringify({ uid, role: "user" }));
-        setIsModalOpen(false);
       });
   };
 
   return {
-    user: getCurrentUser(),
+    user,
     uidAuth,
     logout,
     getUsers

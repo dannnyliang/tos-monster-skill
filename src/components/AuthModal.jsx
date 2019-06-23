@@ -1,8 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
-  Modal,
-  ModalHeader,
-  ModalBody,
+  Card,
+  CardHeader,
+  CardBody,
   Input,
   Button,
   FormFeedback
@@ -10,11 +11,8 @@ import {
 import isNaN from "lodash/isNaN";
 import isEmpty from "lodash/isEmpty";
 
-import { UserContext } from "../App";
-
 function AuthModal(props) {
-  const { isModalOpen, setIsModalOpen } = props;
-  const { uidAuth } = useContext(UserContext);
+  const { uidAuth } = props;
   const [uidInput, setUidInput] = useState("");
 
   const isInValid = () => {
@@ -22,27 +20,30 @@ function AuthModal(props) {
   };
 
   return (
-    <Modal isOpen={isModalOpen}>
-      <ModalHeader>請輸入 UID</ModalHeader>
-      <ModalBody>
+    <Card>
+      <CardHeader>請輸入 UID</CardHeader>
+      <CardBody>
         <Input
           value={uidInput}
           onChange={e => setUidInput(e.target.value)}
           invalid={isInValid()}
         />
         <FormFeedback>UID 必須為數字</FormFeedback>
-      </ModalBody>
-      <Button
-        color="primary"
-        disabled={isEmpty(uidInput) || isInValid()}
-        onClick={() => {
-          uidAuth(uidInput);
-          setIsModalOpen(false);
-        }}
-      >
-        送出
-      </Button>
-    </Modal>
+      </CardBody>
+      <Link to="/">
+        <Button
+          className="w-100"
+          color="primary"
+          disabled={isEmpty(uidInput) || isInValid()}
+          onClick={() => {
+            uidAuth(uidInput);
+            setUidInput("");
+          }}
+        >
+          送出
+        </Button>
+      </Link>
+    </Card>
   );
 }
 

@@ -8,7 +8,7 @@ import PaginationPages from "./PaginationPages";
 import MonsterList from "./MonsterList";
 import { propTypes as monsterTypes } from "./MonsterCard";
 import { getFilteredMonsters } from "./utils/filters";
-import { TagContext } from "../App";
+import { TagContext } from "../AppRouter";
 
 function SectionList(props) {
   const { monsters, filters, initialPage, cardPerPage, searchStr } = props;

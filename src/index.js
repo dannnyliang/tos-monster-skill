@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { initializeApp } from "firebase";
 
-import App from "./App";
+import AppRouter from "./AppRouter";
 import "bootstrap/dist/css/bootstrap.css";
 
 const config = {
@@ -13,4 +13,4 @@ const config = {
 };
 initializeApp(config);
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<AppRouter />, document.getElementById("root"));
